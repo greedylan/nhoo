@@ -1,0 +1,199 @@
+//output: 03_detail.html
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no")
+    title Offer Detail
+    
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous")
+    link(rel="stylesheet" type="text/css" href="css/main.nested.css")  
+
+  body
+
+    //- insert snackbar here
+    section.notice
+      div.container
+        div.row
+          div.col
+            h4 Save Successfuly! 
+            p.notice-description Don't forget to redeem the offer!
+            button.btn-action.btn-3.btn-200 browse more offers
+            button.btn-action.btn-3.btn-200 see my favorites
+            div.btn-exit
+              img(src="svg/icon-x-2.svg")  
+  
+  
+    //add modal/popup window here
+    section.modal-custom
+      div.modal-custom-inner
+        img.btn-exit(src="svg/icon-x-2.svg")
+        div.modal-custom-inner-inner
+          img.modal-logo(src="image/retailLogo-nobu-2.png")
+          h4 $25 OFF YOUR TOTAL BILL
+          
+          input(type="text" value="Phone Number")
+          button.btn-action.btn-1 TEXT LINK
+          p.modal-msg Get direction and redeem codes on the go!
+
+    section.menu-mobile
+      div.back-button
+        svg.back-arrow(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 75 50" style="enable-background:new 0 0 75 50;" xml:space="preserve")
+          path(d="M3,23h69c1.1,0,2,0.9,2,2v0c0,1.1-0.9,2-2,2H3c-1.1,0-2-0.9-2-2v0C1,23.9,1.9,23,3,23z")
+          path(d="M4,23.2l10.5,6.1c1,0.5,1.3,1.8,0.7,2.7l0,0c-0.5,1-1.8,1.3-2.7,0.7L2,26.7c-1-0.6-1.3-1.8-0.7-2.7l0,0C1.8,23,3.1,22.7,4,23.2z")
+          path(d="M2,23.3l10.5-6.1c1-0.6,2.2-0.2,2.7,0.7l0,0c0.5,1,0.2,2.2-0.7,2.7L4,26.8c-1,0.6-2.2,0.2-2.7-0.7l0,0C0.7,25.1,1.1,23.9,2,23.3z")
+
+      div.menu-mobile-content
+        div.cat-wrapper
+          img.icon-cat-mobile(src="svg/icon-cat-retail-light.svg")
+          div.cat-text-field.inline
+            div.cat-name Retail
+            div.cat-count (26)
+
+        div.cat-wrapper
+          img.icon-cat-mobile(src="svg/icon-cat-fitness-light.svg")
+          div.cat-text-field.inline
+            div.cat-name Fitness
+            div.cat-count (26)
+
+        div.cat-wrapper
+          img.icon-cat-mobile(src="svg/icon-cat-er-light.svg")
+          div.cat-text-field.inline
+            div.cat-name Emergency Service
+            div.cat-count (26)
+
+        div.cat-wrapper
+          img.icon-cat-mobile(src="svg/icon-cat-entertainment-light.svg")
+          div.cat-text-field.inline
+            div.cat-name Entertainment
+            div.cat-count (26)
+
+        div.cat-wrapper
+          img.icon-cat-mobile(src="svg/icon-cat-homeimprovement-light.svg")
+          div.cat-text-field.inline
+            div.cat-name Home Improvement
+            div.cat-count (26)
+
+        div.cat-wrapper
+          img.icon-cat-mobile(src="svg/icon-cat-nhoguide-light.svg")
+          div.cat-text-field.inline
+            div.cat-name NHO Guide
+            div.cat-count (26)
+
+    header
+      div.container
+        div.row
+          div.col
+            img.hamburger(src="svg/icon-hamburger.svg")
+            img.logo(src="svg/logo.svg")          
+            nav
+              //- a  how it works
+              //- a  get an invitation code
+              //- a  log in
+              a.nav-profile  jay engstrom
+                span (5)
+              a.nav-favorite  my favorite offers
+      
+    // fill up 80px header's height        
+    section.header-shift  
+    
+    section.detail-wrapper.top-buffer
+      div.container
+        div.row
+          div.detail-logo.col
+            img(src="image/retailLogo-nobu.png")
+
+        div.row.top-buffer-xs
+          div.col-12.col-sm-12.col-md-12.col-lg-8
+          
+            div.detail-image
+              div.row
+                div.col
+                  img(src="image/offer-image-nobu2.png")
+            div.top-buffer-xs
+              div.row.justify-content-center
+                div.col-12.col-sm-12.col-md-12.col-lg-6.centered.whitebox
+                  div.detail-title 
+                    h5 $25 off
+                    h6 your total bill
+                  div.offer-desc
+                div.col-12.col-sm-12.col-md-12.col-lg-6.btn-action-container
+                  //- div.get-offer
+                  //-   div To get this offers: 
+                  //-   a.teal-1 Sign In
+                  //-   span &#124;
+                  //-   a.teal-1 Enter Invitation Codes
+                  
+
+                  button.btn-action.btn-1#btn-sms text offer to mobile
+                  button.btn-action.btn-2#btn-save save to favorite
+                  button.btn-action.btn-3 print offer
+                  button.btn-action.btn-1.btn-redeem redeem offer
+                  
+                  
+                
+              
+              div.detail-restric.top-buffer-xs
+                div.restric-title Deal Restrictions
+                p Must be used during displayed time frame. Deals cannot be combined with other deals or subsutituted
+                p.expire.top-buffer-xs Expiration Date:
+                  span  01/16/2017
+                  
+                //- p.offer-code NHO Code
+                //-   span xyz123s
+                  
+                div.redeem-code 
+                  span.code-title NHO Codes:
+                  span.code-digit LXKC213
+                  
+          
+                
+            
+          div.col-12.col-sm-12.col-md-12.col-lg-4.detail-map
+            div.detail-map-placeholder
+              img(src="image/image-map.png")
+              
+              
+            div.retailer-info-container 
+              h4 Location Information
+              
+              div.retailer-info
+                span.retailer-addr 8683 Irvine Center Dr. Irvine, CA 92618
+              
+              div.retailer-info
+                span.retailer-url www.redrobin.com
+            
+              div.retailer-info
+                span.retailer-phone (714)239-4721
+                
+              div.retailer-info
+                span.retailer-email jsmith@subway.com  
+
+            
+        div.row.top-buffer-xs
+          div.col
+            button.btn-anchorOffer 
+              a(href="#") back to Offers
+        
+
+    
+    footer.top-buffer
+      div.container
+        div.row.justify-content-center
+          div.col
+            div.footer-link
+              a Privacy
+              a Terms of Use
+              a FAQ
+              a Contact Us
+            div.footer-copywrite Copyright 2017 DBM Group. All Rights Reserved.
+
+
+
+
+  //JQuery        
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+  //Slick Carousel
+  script(type="text/javascript" src="slick/slick.min.js")
+  //custom javascript by Dylan (for clicking events)
+  script(src="script/main.js")

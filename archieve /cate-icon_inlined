@@ -1,0 +1,188 @@
+a
+  div.cat-wrapper
+    svg.blue-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve")
+      path(d="M41.2,2.4L29,14.7c-0.4,0.4-0.6,0.9-0.7,1.4c-0.2,1.9-0.1,6.5,5.6,5.6c0.5-0.1,1-0.3,1.3-0.7L47.5,8.7")
+      line(x1="44.4" y1="5.6" x2="29.7" y2="20.2")
+      path(d="M19.2,28L2.8,43.5c-0.4,0.3-0.4,0.9,0,1.3l2.4,2.4c0.4,0.4,0.9,0.3,1.3,0l15.5-16.4")
+      path(d="M25.7,21.9")
+      path(d="M28.1,24.2")
+      path (d="M19.2,28")
+      polyline(points="28.1,24.2 30.4,21.7 28.2,19.5 25.7,21.9")
+      path(d="M47.2,44.3L7.1,2.9C6.7,2.6,6.2,2.6,6,3.1C5,5,3.5,10.5,5.9,13.8l16.9,17.5c0.4,0.4,1,0.4,1.3,0l1.7-1.6c0.4-0.4,1-0.4,1.3,0l17,17.5c0.4,0.4,1,0.4,1.3,0l1.7-1.6C47.5,45.3,47.5,44.7,47.2,44.3z")
+    div.cat-text-field.inline
+      div.cat-name Restaurant
+      div.cat-count (26)
+
+div.cat-wrapper
+  a
+    svg.blue-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve")
+      polygon(points="9.6,12.6 47.5,12.6 47.5,30.3 9.6,32.7")
+      path(d="M2.5,7.2h4.1l3,5.5v21.7c0,0-0.6,4.7,3,4.7h32")
+      line(x1="9.6" y1="22" x2="47.5" y2="22")
+      line(x1="18.9" y1="12.6" x2="18.9" y2="32.1")
+      line(x1="29.4" y1="12.6" x2="29.4" y2="31.5")
+      line(x1="39.5" y1="12.6" x2="39.5" y2="31.2")
+      circle(cx="17.9" cy="41" r="1.8")
+      circle(cx="36.8" cy="41" r="1.8")
+    div.cat-text-field.inline
+      div.cat-name Retail
+      div.cat-count (26)
+
+div.cat-wrapper
+  a
+    svg.blue-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve")
+      path(d="M25.1,9.3c0,0-9.4-9.4-18.2-2c0,0-10.8,8.1,1.3,21.6L23.8,45c0,0,1.3,1.3,2.7,0l16.8-17.5c0,0,9.4-11.5,0-20.2C43.3,7.3,35.9-0.2,25.1,9.3z")
+      polyline(points="4.4,24.7 17.3,24.7 19.3,18.6 25.3,31.4 30.1,25.3 45.6,25.3")
+    div.cat-text-field.inline
+      div.cat-name Fitness
+      div.cat-count (26)
+
+div.cat-wrapper
+  a
+    svg.blue-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve")
+      path(d="M46.5,42.1h-43c-0.6,0-1-0.4-1-1V14.7c0-0.6,0.4-1,1-1h43c0.6,0,1,0.4,1,1v26.4C47.5,41.7,47.1,42.1,46.5,42.1z")
+      path(d="M31.8,12.3v-1.8c0-0.6-2.4-1.7-6.8-1.7s-6.8,1.1-6.8,1.7v1.8h-1v-1.8c0-1.9,4.6-2.6,7.8-2.6s7.8,0.7,7.8,2.6v1.8H31.8z")
+      line(x1="19.1" y1="27.9" x2="30.9" y2="27.9")
+      line(x1="25" y1="22.5" x2="25" y2="33.3")
+    div.cat-text-field.inline
+      div.cat-name Emergency Service
+      div.cat-count (26)
+
+div.cat-wrapper
+  a
+    svg.blue-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve")
+      line(x1="12.1" y1="17.6" x2="37.9" y2="17.6")
+      path(d="M12.1,13.3v16.4l0,0c0.5,6.1,6.1,11,12.9,11s12.4-4.8,12.9-11l0,0V13.3")
+      path(d="M16.4,13.3v15.3l0,0.4c0.3,4.2,4.1,7.5,8.6,7.5s8.3-3.3,8.6-7.5l0-0.4V13.3")
+      path(d="M33.6,13.3V9.8l0-0.4c-0.3-3.8-4.1-6.8-8.6-6.8s-8.3,3-8.6,6.8l0,0.3v3.6")
+      line(x1="21.8" y1="40.6" x2="21.8" y2="47.5")
+      line(x1="28.2" y1="40.6" x2="28.2" y2="47.5")
+      line(x1="12.4" y1="47.5" x2="37.6" y2="47.5")
+      line(x1="25" y1="2.8" x2="25" y2="9.3")
+      line(x1="21.5" y1="3.3" x2="21.5" y2="7.2")
+      line(x1="28.5" y1="3.3" x2="28.5" y2="7.2")
+    div.cat-text-field.inline
+      div.cat-name Entertainment
+      div.cat-count (26)
+
+div.cat-wrapper
+  a
+    svg.blue-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve")
+      path(d="M42.5,11.6H5.8c-0.6,0-1-0.4-1-1V3.8c0-0.6,0.4-1,1-1h36.8c0.6,0,1,0.4,1,1v6.8C43.5,11.2,43.1,11.6,42.5,11.6z")
+      rect(x="2.5" y="5.3" width="2.3" height="3.8")
+      path(d="M24.2,47.2h-2.3c-0.6,0-1-0.4-1-1v-12c0-0.6,0.4-1,1-1h2.3c0.6,0,1,0.4,1,1v12C25.2,46.7,24.7,47.2,24.2,47.2z")
+      polyline(points="43.5,7.2 47.5,7.2 47.5,16 23,20.3 23,32.7")
+      line(x1="21.2" y1="44" x2="24.8" y2="44")
+    div.cat-text-field.inline
+      div.cat-name Home Improvement
+      div.cat-count (26)
+
+div.cat-wrapper
+  a
+    svg.blue-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve")
+      path(d="M47.5,7.9c0,0-10.9-4.9-21.9,0h-1.2c0,0-8.5-4.9-21.9,0v35.3h45V7.9z")
+      line(x1="25" y1="7.3" x2="25" y2="42.9")
+      path(d="M47.5,43.1c0,0-11.4-6.1-21.5,0h-1.6c-12.9-6.1-21.9,0-21.9,0")
+      rect(x="23.4" y="43.4" class="st2" width="3.7" height="0.9")
+    div.cat-text-field.inline
+      div.cat-name NHO Guide
+      div.cat-count (26)
+
+
+
+
+
+
+
+
+
+
+
+
+
+MOBILE
+
+
+//- div.menu-mobile-cat
+//-   div.cat-wrapper
+//-     svg.white-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve")
+//-       path(d="M41.2,2.4L29,14.7c-0.4,0.4-0.6,0.9-0.7,1.4c-0.2,1.9-0.1,6.5,5.6,5.6c0.5-0.1,1-0.3,1.3-0.7L47.5,8.7")
+//-       line(x1="44.4" y1="5.6" x2="29.7" y2="20.2")
+//-       path(d="M19.2,28L2.8,43.5c-0.4,0.3-0.4,0.9,0,1.3l2.4,2.4c0.4,0.4,0.9,0.3,1.3,0l15.5-16.4")
+//-       path(d="M25.7,21.9")
+//-       path(d="M28.1,24.2")
+//-       path (d="M19.2,28")
+//-       polyline(points="28.1,24.2 30.4,21.7 28.2,19.5 25.7,21.9")
+//-       path(d="M47.2,44.3L7.1,2.9C6.7,2.6,6.2,2.6,6,3.1C5,5,3.5,10.5,5.9,13.8l16.9,17.5c0.4,0.4,1,0.4,1.3,0l1.7-1.6c0.4-0.4,1-0.4,1.3,0l17,17.5c0.4,0.4,1,0.4,1.3,0l1.7-1.6C47.5,45.3,47.5,44.7,47.2,44.3z")
+//-     div.cat-text-field.inline
+//-       div.cat-name Restaurant
+//-       div.cat-count (26)
+//-
+//-   div.cat-wrapper
+//-     svg.white-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve")
+//-       polygon(points="9.6,12.6 47.5,12.6 47.5,30.3 9.6,32.7")
+//-       path(d="M2.5,7.2h4.1l3,5.5v21.7c0,0-0.6,4.7,3,4.7h32")
+//-       line(x1="9.6" y1="22" x2="47.5" y2="22")
+//-       line(x1="18.9" y1="12.6" x2="18.9" y2="32.1")
+//-       line(x1="29.4" y1="12.6" x2="29.4" y2="31.5")
+//-       line(x1="39.5" y1="12.6" x2="39.5" y2="31.2")
+//-       circle(cx="17.9" cy="41" r="1.8")
+//-       circle(cx="36.8" cy="41" r="1.8")
+//-     div.cat-text-field.inline
+//-       div.cat-name Retail
+//-       div.cat-count (26)
+//-
+//-   div.cat-wrapper
+//-     svg.white-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve")
+//-       path(d="M25.1,9.3c0,0-9.4-9.4-18.2-2c0,0-10.8,8.1,1.3,21.6L23.8,45c0,0,1.3,1.3,2.7,0l16.8-17.5c0,0,9.4-11.5,0-20.2C43.3,7.3,35.9-0.2,25.1,9.3z")
+//-       polyline(points="4.4,24.7 17.3,24.7 19.3,18.6 25.3,31.4 30.1,25.3 45.6,25.3")
+//-     div.cat-text-field.inline
+//-       div.cat-name Fitness
+//-       div.cat-count (26)
+//-
+//-   div.cat-wrapper
+//-     svg.white-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve")
+//-       path(d="M46.5,42.1h-43c-0.6,0-1-0.4-1-1V14.7c0-0.6,0.4-1,1-1h43c0.6,0,1,0.4,1,1v26.4C47.5,41.7,47.1,42.1,46.5,42.1z")
+//-       path(d="M31.8,12.3v-1.8c0-0.6-2.4-1.7-6.8-1.7s-6.8,1.1-6.8,1.7v1.8h-1v-1.8c0-1.9,4.6-2.6,7.8-2.6s7.8,0.7,7.8,2.6v1.8H31.8z")
+//-       line(x1="19.1" y1="27.9" x2="30.9" y2="27.9")
+//-       line(x1="25" y1="22.5" x2="25" y2="33.3")
+//-     div.cat-text-field.inline
+//-       div.cat-name Emergency Service
+//-       div.cat-count (26)
+//-
+//-   div.cat-wrapper
+//-     svg.white-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve")
+//-       line(x1="12.1" y1="17.6" x2="37.9" y2="17.6")
+//-       path(d="M12.1,13.3v16.4l0,0c0.5,6.1,6.1,11,12.9,11s12.4-4.8,12.9-11l0,0V13.3")
+//-       path(d="M16.4,13.3v15.3l0,0.4c0.3,4.2,4.1,7.5,8.6,7.5s8.3-3.3,8.6-7.5l0-0.4V13.3")
+//-       path(d="M33.6,13.3V9.8l0-0.4c-0.3-3.8-4.1-6.8-8.6-6.8s-8.3,3-8.6,6.8l0,0.3v3.6")
+//-       line(x1="21.8" y1="40.6" x2="21.8" y2="47.5")
+//-       line(x1="28.2" y1="40.6" x2="28.2" y2="47.5")
+//-       line(x1="12.4" y1="47.5" x2="37.6" y2="47.5")
+//-       line(x1="25" y1="2.8" x2="25" y2="9.3")
+//-       line(x1="21.5" y1="3.3" x2="21.5" y2="7.2")
+//-       line(x1="28.5" y1="3.3" x2="28.5" y2="7.2")
+//-     div.cat-text-field.inline
+//-       div.cat-name Entertainment
+//-       div.cat-count (26)
+//-
+//-   div.cat-wrapper
+//-     svg.white-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve")
+//-       path(d="M42.5,11.6H5.8c-0.6,0-1-0.4-1-1V3.8c0-0.6,0.4-1,1-1h36.8c0.6,0,1,0.4,1,1v6.8C43.5,11.2,43.1,11.6,42.5,11.6z")
+//-       rect(x="2.5" y="5.3" width="2.3" height="3.8")
+//-       path(d="M24.2,47.2h-2.3c-0.6,0-1-0.4-1-1v-12c0-0.6,0.4-1,1-1h2.3c0.6,0,1,0.4,1,1v12C25.2,46.7,24.7,47.2,24.2,47.2z")
+//-       polyline(points="43.5,7.2 47.5,7.2 47.5,16 23,20.3 23,32.7")
+//-       line(x1="21.2" y1="44" x2="24.8" y2="44")
+//-     div.cat-text-field.inline
+//-       div.cat-name Home Improvement
+//-       div.cat-count (26)
+//-
+//-   div.cat-wrapper
+//-     svg.white-icon(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve")
+//-       path(d="M47.5,7.9c0,0-10.9-4.9-21.9,0h-1.2c0,0-8.5-4.9-21.9,0v35.3h45V7.9z")
+//-       line(x1="25" y1="7.3" x2="25" y2="42.9")
+//-       path(d="M47.5,43.1c0,0-11.4-6.1-21.5,0h-1.6c-12.9-6.1-21.9,0-21.9,0")
+//-       rect(x="23.4" y="43.4" class="st2" width="3.7" height="0.9")
+//-     div.cat-text-field.inline
+//-       div.cat-name NHO Guide
+//-       div.cat-count (26)

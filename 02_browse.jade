@@ -1,0 +1,284 @@
+//output: 02_browse.html
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no")
+    title Browsing Page
+    
+    
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous")
+    link(rel="stylesheet" type="text/css" href="css/main.nested.css")  
+    
+    
+    link(rel="stylesheet" type="text/css" href="slick/slick.css")
+    link(rel="stylesheet" type="text/css" href="slick/slick-theme.css")
+    
+  body
+    
+    //- insert snackbar here
+    section.notice
+      div.container
+        div.row
+          div.col
+            h4 Jay, Congratulations on your new home!
+            p.notice-description To celebrate this notable occasion, local businesses have come together to offer you their best deals.  These deals cannot be found anywhere else and are meant exclusively for new home owners.
+            div.btn-exit
+              img(src="svg/icon-x-2.svg")
+        
+    
+    section.menu-mobile
+      div.back-button
+        svg.back-arrow(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 75 50" style="enable-background:new 0 0 75 50;" xml:space="preserve")
+          path(d="M3,23h69c1.1,0,2,0.9,2,2v0c0,1.1-0.9,2-2,2H3c-1.1,0-2-0.9-2-2v0C1,23.9,1.9,23,3,23z")
+          path(d="M4,23.2l10.5,6.1c1,0.5,1.3,1.8,0.7,2.7l0,0c-0.5,1-1.8,1.3-2.7,0.7L2,26.7c-1-0.6-1.3-1.8-0.7-2.7l0,0C1.8,23,3.1,22.7,4,23.2z")
+          path(d="M2,23.3l10.5-6.1c1-0.6,2.2-0.2,2.7,0.7l0,0c0.5,1,0.2,2.2-0.7,2.7L4,26.8c-1,0.6-2.2,0.2-2.7-0.7l0,0C0.7,25.1,1.1,23.9,2,23.3z")
+      
+      div.menu-mobile-content
+        div.cat-wrapper
+          img.icon-cat-mobile(src="svg/icon-cat-retail-light.svg")
+          div.cat-text-field.inline
+            div.cat-name Retail
+            div.cat-count (26)
+        
+        div.cat-wrapper
+          img.icon-cat-mobile(src="svg/icon-cat-fitness-light.svg")
+          div.cat-text-field.inline
+            div.cat-name Fitness
+            div.cat-count (26)
+        
+        div.cat-wrapper
+          img.icon-cat-mobile(src="svg/icon-cat-er-light.svg")
+          div.cat-text-field.inline
+            div.cat-name Emergency Service
+            div.cat-count (26)
+            
+        div.cat-wrapper
+          img.icon-cat-mobile(src="svg/icon-cat-entertainment-light.svg")
+          div.cat-text-field.inline
+            div.cat-name Entertainment
+            div.cat-count (26)
+        
+        div.cat-wrapper
+          img.icon-cat-mobile(src="svg/icon-cat-homeimprovement-light.svg")
+          div.cat-text-field.inline
+            div.cat-name Home Improvement
+            div.cat-count (26)
+        
+        div.cat-wrapper
+          img.icon-cat-mobile(src="svg/icon-cat-nhoguide-light.svg")
+          div.cat-text-field.inline
+            div.cat-name NHO Guide
+            div.cat-count (26)
+
+    header
+      div.container
+        div.row
+          div.col
+            img.hamburger(src="svg/icon-hamburger.svg")
+            img.logo(src="svg/logo.svg")          
+            nav
+              //- a  how it works
+              //- a  get an invitation code
+              //- a  log in
+              a.nav-profile  jay engstrom
+                span (5)
+              a.nav-favorite  my favorite offers
+    
+    // fill up 80px header's height        
+    section.header-shift  
+       
+
+      
+    
+    section.browse-wrapper
+      div.container
+        div.row
+          div.col
+            h2.top-buffer Your Local Offers
+            //- we do not this the following button in the actual website, just to demo the snack bar/notice box 
+            button.show-notice click me to toggle the snackbar
+        div.row
+        
+          div.main-side-cat.col-xl-3.top-buffer
+            div.side-cat-wrapper
+              
+              //- angular incapable
+              //- div.highlight
+              //- angular incapable
+              
+              
+              div.side-cat-wrapper-inner
+              
+                div.cat-wrapper.highlight
+                  a(href="#offerBox-restaurant")
+                    img.icon-cat(src="svg/icon-cat-restaurant.svg")
+                    div.cat-text-field.inline
+                      div.cat-name Restaurant
+                      div.cat-count (26)
+                
+                div.cat-wrapper
+                  a(href="#offerBox-retail")
+                    img.icon-cat(src="svg/icon-cat-retail.svg")
+                    div.cat-text-field.inline
+                      div.cat-name Retail
+                      div.cat-count (26)
+                
+                div.cat-wrapper.highlight
+                  a(href="#offerBox-fitness")
+                    img.icon-cat(src="svg/icon-cat-fitness.svg")
+                    div.cat-text-field.inline
+                      div.cat-name Fitness
+                      div.cat-count (26)
+                
+                div.cat-wrapper
+                  a(href="#offerBox-er")
+                    img.icon-cat(src="svg/icon-cat-er.svg")
+                    div.cat-text-field.inline
+                      div.cat-name Emergency Service
+                      div.cat-count (26)
+                    
+                div.cat-wrapper.highlight
+                  a(href="#offerBox-entertainment")
+                    img.icon-cat(src="svg/icon-cat-entertainment.svg")
+                    div.cat-text-field.inline
+                      div.cat-name Entertainment
+                      div.cat-count (26)
+                
+                div.cat-wrapper
+                  a(href="#offerBox-homeimprovement")
+                    img.icon-cat(src="svg/icon-cat-homeimprovement.svg")
+                    div.cat-text-field.inline
+                      div.cat-name Home Improvement
+                      div.cat-count (26)
+                
+                div.cat-wrapper.highlight
+                  a(href="#offerBox-nhoguide")
+                    img.icon-cat(src="svg/icon-cat-nhoguide.svg")
+                    div.cat-text-field.inline
+                      div.cat-name NHO Guide
+                      div.cat-count (26)
+          
+          div.seudo-block.col-xl-3(style="display: none; background-color: #efefef")
+        
+          div.main-offer.col-xl-9.col-lg-12.col-md-12.col.top-buffer
+              
+              //- insert offer categories here
+              div.offer-cat-wrapper#offerBox-restaurant
+              
+                div.mobile-cat-tag
+                  //- insert category SVG here
+                  img.cat-icon(src="svg/icon-cat-restaurant.svg")
+                  //- insert category name here
+                  span Restaruant
+  
+                //- inset offer-box here, to use featured ribbon, add class "feaured-browsepage"
+                div.offer-box.featured-browsepage
+                  a()
+                    div.offer-picture.col-lg-4.col-md-4.col-sm-12.col-12.padding-set1
+                      div.offer-picture-frame
+                        img(src="image/offer-image-nobu.png")
+                    
+                    div.offer-info.col-lg-8.col-md-8.col-sm-12.col-12
+                    
+                      div.offer-title.col-lg-6.col-md-6.col-sm-12.col-12.padding-set1
+                        div.offer-title-inner
+                          div.title-text
+                            h5 $25 off  
+                            h6 off your total bill
+                        
+                      div.offer-misc.col-lg-6.col-md-6.col-sm-12.col-12.padding-set1
+                        div.offer-geo.col-lg-12.col-md-12.col-sm-6.col-12.padding-none
+                          div.geo-wrapper Costa Mesa, CA 
+                            span.mile 1.1 mile(s)
+                            
+                        div.offer-misc-logo.col-lg-12.col-md-12.col-sm-6.col-12.padding-none
+                          img.retailer-logo(src="image/retailLogo-nobu.png")    
+                //- inset offer-box here
+                div.offer-box
+                  a()
+                    div.offer-picture.col-lg-4.col-md-4.col-sm-12.col-12.padding-set1
+                      div.offer-picture-frame
+                        img(src="image/offer-image-californiapizza.png")
+                    
+                    div.offer-info.col-lg-8.col-md-8.col-sm-12.col-12
+                    
+                      div.offer-title.col-lg-6.col-md-6.col-sm-12.col-12.padding-set1
+                        div.offer-title-inner
+                          div.title-text
+                            h5 free pizza
+                            h6 eaqual or lesser value of your first piazza order
+                        
+                      div.offer-misc.col-lg-6.col-md-6.col-sm-12.col-12.padding-set1
+                        div.offer-geo.col-lg-12.col-md-12.col-sm-6.col-12.padding-none
+                          div.geo-wrapper Santa Ana, CA 
+                            span.mile 2.7 mile(s)
+
+                        div.offer-misc-logo.col-lg-12.col-md-12.col-sm-6.col-12.padding-none
+                          img.retailer-logo(src="image/retailLogo-californiakitchen.png")    
+
+
+              div.offer-cat-wrapper#offerBox-retail
+              div.offer-cat-wrapper#offerBox-fitness
+              div.offer-cat-wrapper#offerBox-er
+              div.offer-cat-wrapper#offerBox-entertainment
+
+                    
+              //- insert offer categories here
+              div.offer-cat-wrapper#offerBox-homeimprovement
+                div.mobile-cat-tag
+                  //- insert category SVG here
+                  img.cat-icon(src="svg/icon-cat-homeimprovement.svg")
+                  //- insert category name here
+                  span Home Improvment
+                
+                //- inset offer-box here, to use featured ribbon, add class "feaured-browsepage"
+                div.offer-box.featured-browsepage
+                  a()
+                    div.offer-picture.col-lg-4.col-md-4.col-sm-12.col-12.padding-set1
+                      div.offer-picture-frame
+                        img(src="image/offer-image-wayfair.png")
+                    
+                    div.offer-info.col-lg-8.col-md-8.col-sm-12.col-12
+                    
+                      div.offer-title.col-lg-6.col-md-6.col-sm-12.col-12.padding-set1
+                        div.offer-title-inner
+                          div.title-text
+                            h5 70% off
+                            h6 on all major appliances
+                        
+                      div.offer-misc.col-lg-6.col-md-6.col-sm-12.col-12.padding-set1
+                        div.offer-geo.col-lg-12.col-md-12.col-sm-6.col-12.padding-none
+                          div.geo-wrapper Brea, CA
+                            span.mile 4.3 miles
+        
+                        div.offer-misc-logo.col-lg-12.col-md-12.col-sm-6.col-12.padding-none
+                          img.retailer-logo(src="image/retailLogo-wayfair.png")
+                
+              
+              div.offer-cat-wrapper#offerBox-nhoguide
+
+              //insert loading animation after all offer-cat-wrapper
+              div.loading-block
+                svg#loader(x="0" y="0" viewBox="0 0 100 100")
+                  circle(cx="50" cy="50" r="25")                
+  
+
+  
+    footer.top-buffer
+      div.container
+        div.row.justify-content-center
+          div.col
+            div.footer-link
+              a Privacy
+              a Terms of Use
+              a FAQ
+              a Contact Us
+            div.footer-copywrite Copyright 2017 DBM Group. All Rights Reserved.
+
+  //JQuery        
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+  //Slick Carousel
+  script(type="text/javascript" src="slick/slick.min.js")
+  //custom javascript by Dylan (for clicking events)
+  script(src="script/main.js")

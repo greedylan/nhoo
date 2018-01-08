@@ -1,0 +1,165 @@
+//output: 06_profile.html
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no")
+    title User Profile
+    
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous")
+    link(rel="stylesheet" type="text/css" href="css/main.nested.css")  
+
+  body
+
+    section.menu-mobile
+      div.back-button
+        svg.back-arrow(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 75 50" style="enable-background:new 0 0 75 50;" xml:space="preserve")
+          path(d="M3,23h69c1.1,0,2,0.9,2,2v0c0,1.1-0.9,2-2,2H3c-1.1,0-2-0.9-2-2v0C1,23.9,1.9,23,3,23z")
+          path(d="M4,23.2l10.5,6.1c1,0.5,1.3,1.8,0.7,2.7l0,0c-0.5,1-1.8,1.3-2.7,0.7L2,26.7c-1-0.6-1.3-1.8-0.7-2.7l0,0C1.8,23,3.1,22.7,4,23.2z")
+          path(d="M2,23.3l10.5-6.1c1-0.6,2.2-0.2,2.7,0.7l0,0c0.5,1,0.2,2.2-0.7,2.7L4,26.8c-1,0.6-2.2,0.2-2.7-0.7l0,0C0.7,25.1,1.1,23.9,2,23.3z")
+
+      div.menu-mobile-content
+        div.cat-wrapper
+          img.icon-cat-mobile(src="svg/icon-cat-retail-light.svg")
+          div.cat-text-field.inline
+            div.cat-name Retail
+            div.cat-count (26)
+
+        div.cat-wrapper
+          img.icon-cat-mobile(src="svg/icon-cat-fitness-light.svg")
+          div.cat-text-field.inline
+            div.cat-name Fitness
+            div.cat-count (26)
+
+        div.cat-wrapper
+          img.icon-cat-mobile(src="svg/icon-cat-er-light.svg")
+          div.cat-text-field.inline
+            div.cat-name Emergency Service
+            div.cat-count (26)
+
+        div.cat-wrapper
+          img.icon-cat-mobile(src="svg/icon-cat-entertainment-light.svg")
+          div.cat-text-field.inline
+            div.cat-name Entertainment
+            div.cat-count (26)
+
+        div.cat-wrapper
+          img.icon-cat-mobile(src="svg/icon-cat-homeimprovement-light.svg")
+          div.cat-text-field.inline
+            div.cat-name Home Improvement
+            div.cat-count (26)
+
+        div.cat-wrapper
+          img.icon-cat-mobile(src="svg/icon-cat-nhoguide-light.svg")
+          div.cat-text-field.inline
+            div.cat-name NHO Guide
+            div.cat-count (26)
+
+    header
+      div.container
+        div.row
+          div.col
+            img.hamburger(src="svg/icon-hamburger.svg")
+            img.logo(src="svg/logo.svg")
+            nav
+              //- a  how it works
+              //- a  get an invitation code
+              //- a  log in
+              a.nav-profile  jay engstrom
+                span (5)
+              a.nav-favorite  my favorite offers
+    
+    section.header-shift
+    
+    section.profile-wrapper
+      div.container
+        div.row.justify-content-center
+          div.col-lg-9
+          
+          
+            div.profile-name.top-buffer Jay Engstrom
+            
+            div.profile-info-row
+              div.profile-data-wrapper
+                div.profile-box 
+                  span.title Email Address
+                  span.profile-data jayengstrom@gmail.com
+                  button.btn.btn-edit(type="button" data-toggle="collapse" data-target="#revise_email") Edit
+                  //- button.btn.btn-close(type="button" data-toggle="collapse" data-target="#revise_email") Close
+              
+              div.profile-edit-wrapper
+                form.form-regular.collapse#revise_email
+                
+                  div.profile-edit-row
+                    label New Email
+                    input(type="text")
+
+                  input.profile_update(type="submit" value="Update")
+            
+            div.profile-info-row
+              div.profile-data-wrapper
+                div.profile-box 
+                  span.title Password
+                  span.profile-data **********
+                  button.btn.btn-edit(type="button" data-toggle="collapse" data-target="#revise_pw") Edit
+                  //- button.btn.btn-close(type="button" data-toggle="collapse" data-target="#revise_pw") Close
+              
+              div.profile-edit-wrapper
+                form.form-regular.collapse#revise_pw
+                
+                  div.profile-edit-row
+                    label Current
+                    input(type="text")
+                    
+                  div.profile-edit-row
+                    label New
+                    input(type="text")
+                    
+                  div.profile-edit-row
+                    label Re-enter new
+                    input(type="text")
+
+                  input.profile_update(type="submit" value="Update")  
+            
+            div.profile-info-row
+              div.profile-data-wrapper
+                div.profile-box 
+                  span.title Cellphone Number
+                  span.profile-data (909) 909-9099
+                  button.btn.btn-edit(type="button" data-toggle="collapse" data-target="#revise_phone") Edit
+                  //- button.btn.btn-close(type="button" data-toggle="collapse" data-target="#revise_") Close
+              
+              div.profile-edit-wrapper
+                form.form-regular.collapse#revise_phone
+                
+                  div.profile-edit-row
+                    label New Cellphone #
+                    input(type="text")
+        
+                  input.profile_update(type="submit" value="Update")
+    
+
+            
+            
+
+      
+      
+    
+    
+    footer.top-buffer
+      div.container
+        div.row.justify-content-center
+          div.col
+            div.footer-link
+              a Privacy
+              a Terms of Use
+              a FAQ
+              a Contact Us
+            div.footer-copywrite Copyright 2017 DBM Group. All Rights Reserved.
+                        
+
+  script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous")
+  script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous")
+            
+  script(src="script/main.js")

@@ -1,0 +1,1799 @@
+// load web fonts
+@font-face
+  font-family: 'Sequel'
+  src: url('../font/Sequel-Regular.eot')
+  src: url('../font/Sequel-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../font/Sequel-Regular.woff') format('woff'),
+  url('../font/Sequel-Regular.ttf') format('truetype')
+  // url('../font/Sequel-Regular.svg#Sequel-Regular') format('svg')
+  font-weight: normal
+  font-style: normal
+@font-face
+  font-family: 'Brandon Grotesque'
+  src: url('../font/BrandonGrotesque-Light.eot')
+  src: url('../font/BrandonGrotesque-Light.eot?#iefix') format('embedded-opentype'),
+  url('../font/BrandonGrotesque-Light.woff') format('woff'),
+  url('../font/BrandonGrotesque-Light.ttf') format('truetype')
+  // url('../font/BrandonGrotesque-Light.svg#BrandonGrotesque-Light') format('svg')
+  font-weight: 300
+  font-style: normal
+@font-face
+	font-family: 'Brandon Grotesque'
+	src: url('../font/BrandonGrotesque-Regular.eot')
+	src: url('../font/BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../font/BrandonGrotesque-Regular.woff') format('woff'),
+	url('../font/BrandonGrotesque-Regular.ttf') format('truetype')
+	// url('../font/BrandonGrotesque-Regular.svg#BrandonGrotesque-Regular') format('svg')
+	font-weight: 400
+	font-style: normal
+@font-face
+  font-family: 'Brandon Grotesque'
+  src: url('../font/BrandonGrotesque-Bold.eot')
+  src: url('../font/BrandonGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../font/BrandonGrotesque-Bold.woff') format('woff'),
+  url('../font/BrandonGrotesque-Bold.ttf') format('truetype')
+  font-weight: 700
+  font-style: normal
+
+@font-face
+  font-family: 'Brandon Grotesque'
+  src: url('../font/BrandonGrotesque-Black.eot')
+  src: url('../font/BrandonGrotesque-Black.eot?#iefix') format('embedded-opentype'),
+  url('../font/BrandonGrotesque-Black.woff') format('woff'),
+  url('../font/BrandonGrotesque-Black.ttf') format('truetype')
+  font-weight: 900
+  font-style: normal
+
+
+
+
+// media queries breakpoints
+@mixin xs
+	@media (max-width: 767px) and (min-width: 0px)
+		@content
+
+@mixin sm
+	@media (min-width: 768px) and (max-width: 991px)
+		@content
+
+@mixin md
+	@media (min-width: 992px) and (max-width: 1199px)
+		@content
+
+@mixin lg
+	@media (min-width: 1200px) and (max-width: 1599px)
+		@content
+
+@mixin xlg
+	@media (min-width: 1600px)
+		@content
+
+@mixin stretch_991
+  @media (min-width: 768px)
+    @content
+
+
+
+
+// SASS variables
+$teal: #00999e
+$lightTeal: #0bb2b2
+$brightTeal: #19e8ef
+
+$slateGrey: #4f5b69
+$lightGrey: #989eaf
+$fadeGrey: #c8c8c8
+
+$darkBlue: #163144
+
+$SQ: 'Sequel'
+$BG: 'Brandon Grotesque'
+
+$standardCurve: cubic-bezier(0.4, 0.0, 0.2, 1)
+$decCurve: cubic-bezier(0.0, 0.0, 0.2, 1)
+$accCurve: cubic-bezier(0.4, 0.0, 1, 1)
+
+// general UI styles
+*
+	box-sizing: border-box
+	padding: 0
+	margin: 0
+
+html
+  height: 100%
+
+body
+  min-height: 100%
+  padding-bottom: 200px
+  position: relative
+  background: #efefef
+  font: 400 17px $BG
+  color: $slateGrey
+  -webkit-font-smoothing: antialiased
+
+h1
+	font-family: $SQ
+	font-weight: normal
+	font-size: calc( 30px + (45 - 30) * ( (100vw - 320px) / ( 2000 - 320) ))
+h2
+	font: normal 24px $SQ
+	color: $slateGrey
+h3
+	font: normal 14px $SQ
+	color: $slateGrey
+h3.white
+  color: #ffffff
+
+h4
+  font: 700 18px $BG
+  color: $slateGrey
+
+
+
+
+h5
+  font: 900 38px $BG
+  color: $slateGrey
+  text-transform: uppercase
+  line-height: 40px
+h6
+  font: 400 17px $BG
+  color: $slateGrey
+  text-transform: capitalize
+  line-height: 18px
+  // -webkit-font-smoothing: antialiased
+
+
+
+
+
+p, span
+	font: 400 17px $BG
+	color: #506a75
+
+
+span.bold
+	font: 700 18px $BG
+	color: $slateGrey
+
+span.offer-status
+  display: block
+  font: 700 18px $BG
+  text-transform: capitalize
+  line-height: 20px
+  position: relative
+  padding: 4px 0px 4px 24px
+  &:before
+    display: block
+    width: 20px
+    height: 20px
+    content: ''
+    background-image: url('../svg/icon-exclamationmark.svg')
+    position: absolute
+    top: 4px
+    left: 0
+
+img
+	width: 100%
+
+a
+  color: $slateGrey
+  text-decoration: none
+  cursor: pointer
+  text-transform: capitalize
+
+a:hover, a:visited, a:active, a:focus
+  text-decoration: none
+
+  outline: 0
+
+.teal-1
+  color: $teal !important
+  font: 700 16px $BG
+
+a.teal
+	color: $brightTeal !important
+
+
+header
+  .container
+    @include md
+      padding: 0
+    @include sm
+      padding: 0
+    @include xs
+      margin: 0
+
+
+header
+	width: 100%
+	height: 80px
+	background: #ffffff
+	position: fixed
+	top: 0
+  left: 0
+	z-index: 500
+	-webkit-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.1)
+	-moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.1)
+	box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.1)
+	@include xs
+		height: 60px
+		background: $teal
+	img.hamburger
+		width: 80px
+		height: 80px
+		cursor: pointer
+		display: none
+		@include xs
+			width: auto
+			height: 60px
+			display: inline-block
+	img.logo
+		width: 240px
+		height: 80px
+		@include xs
+			width: auto
+			height: 60px
+
+
+header
+  @include sm
+    height: 60px
+    background: $teal
+  img.hamburger
+    @include sm
+      width: auto
+      height: 60px
+      display: inline-block
+  img.logo
+    @include sm
+      width: auto
+      height: 60px
+
+
+
+nav
+	width: auto
+	float: right
+	line-height: 80px
+	overflow: hidden
+	a
+		font: 400 17px $BG
+		color: $slateGrey
+		margin: 0 1em
+		text-transform: capitalize
+		transition: color 200ms
+		&:hover
+			color: $lightGrey
+nav
+  a
+    display: inline-block
+    &:after
+      display: block
+      content: ''
+      border-bottom: 2px solid $teal
+      transform: scaleX(0) translateY(5px)
+      transition: all 300ms $standardCurve
+    &:hover:after
+      transform: scaleX(1) translateY(5px)
+      transform-origin: 50% 50%
+nav
+  @include xs
+    display: none
+  @include sm
+    display: none
+
+
+footer
+	width: 100%
+	border-top: 6px solid $teal
+	padding: 30px
+	background: $darkBlue
+	text-align: center
+ position: absolute
+ bottom: 0
+ left: 0
+ right: 0
+ color: $fadeGrey
+
+input[type="checkbox"]
+  margin-right: 10px
+legend
+  font: 400 16px $BG
+  color: $slateGrey
+
+
+
+// conditional style
+.inline
+	display: inline-block
+// vertical spacing
+.top-buffer
+  margin-top: 4vh
+  @include xs
+    margin-top: 2vh
+.top-buffer-sm
+  margin-top: 2vh
+  @include xs
+    margin-top: 1vh
+.top-buffer-xs
+  margin-top: 1vh
+
+button:disabled
+
+
+button
+  &:focus
+    outline: 0
+  &:disabled
+    // background: #efefef !important
+    // color: #c8c8c8!important
+    background: #c8c8c8 !important
+    color: #efefef !important
+    &:hover
+      cursor: default !important
+
+.btn-action
+	width: 100%
+	height: 50px
+	margin-top: 10px
+	border: none
+	border-radius: 4px
+	font: normal 13px $SQ
+	text-transform: uppercase
+	letter-spacing: .5px
+	cursor: pointer
+	&:focus
+		outline: 0
+.btn-action
+  &:first-child
+    margin-top: 0
+    @include sm
+      margin-top: 10px
+    @include xs
+      margin-top: 10px
+.btn-1
+	background: #214154
+	color: #19e8ef
+	&:hover
+		background: #274c5e
+.btn-2
+	background: $teal
+	color: #ffffff
+	&:hover
+		background: #0bb2b2
+.btn-3
+	border: 1px solid $teal
+	background: #ffffff
+	color: $teal
+	&:hover
+		border: 1px solid #0bb2b2
+		color: #0bb2b2
+.btn-grey
+  background: #c8c8c8
+  color: #efefef !important
+
+.btn-200
+  width: 200px
+
+.btn-redeem
+  display: none
+  @include xs
+    display: block
+
+.btn-anchorOffer
+  height: 40px
+  padding: 5px 20px
+  border-radius: 20px
+  font: normal 14px $SQ
+  background: #ffffff
+  border: 1px solid $teal
+  transition: all 200ms $standardCurve
+  // float: right
+  &:hover
+    border: 1px solid $lightTeal
+    // background: $slateGrey
+    background: $darkBlue
+    a
+      // color: $lightTeal
+      // color: #ffffff
+      color: $brightTeal
+
+
+  a
+    color: $teal
+    transition: all 200ms $standardCurve
+    &:hover
+      // color: $lightTeal
+    &:before
+      display: inline-block
+      content: ''
+      width: 28px
+      height: 14px
+      background-image: url('../svg/icon-previous.svg')
+      margin-right: 10px
+
+
+
+
+
+
+
+// style for COMMON ELEMENTS //
+section.notice
+  overflow: hidden
+  padding: 0px 30px
+  background: #dfdfdf
+  // background: rgba(233, 233, 233, .95)
+  max-height: 0
+  transition: all 500ms $standardCurve
+  position: fixed
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 500
+  border-top: 1px solid $fadeGrey
+  &.show
+    padding: 30px 30px
+    max-height: 300px
+  p.notice-description
+    padding-right: 15px
+  div.btn-exit
+    position: absolute
+    top: 50%
+    right: 15px
+    transform: translateY(-50%)
+    width: 30px
+    height: 30px
+    background: rgba(255, 255, 255, .6)
+    border-radius: 50%
+    cursor: pointer
+    &:hover
+      background: rgba(255, 255, 255, 1)
+    img
+      width: 30px
+      height: 30px
+
+
+form
+  input[type="submit"]
+    background: $teal
+    color: #ffffff
+    font: normal 14px $SQ
+    padding: 0 20px
+    height: 50px
+
+form.form-regular
+	input
+		height: 40px
+		border: 1px solid #ffffff
+		border-radius: 4px
+		&:focus
+			outline: 0
+	input[type="text"], input[type="email"], input[type="password"]
+		padding-left: 10px
+		background: #f2f2f2
+		font: normal 18px $BG
+		color: $slateGrey
+
+		&:focus
+			background: #ffffff
+	input[type="submit"]
+		background: $teal
+		color: #ffffff
+		font: normal 14px $SQ
+		padding: 0 20px
+		&:hover
+			background: $lightTeal
+
+form.form-animated
+  div.form-input
+  	width: 100%
+  	position: relative
+  	label
+  		position: absolute
+    top: 16px
+  		left: 16px
+  		font: 400 18px $BG
+  		color: $lightGrey
+  		text-transform: capitalize
+  		transition: all 150ms $accCurve
+    background: transparent
+    @include xs
+      left: 36px
+  	input[type="text"], input[type="email"], input[type="password"]
+  		width: 100%
+  		background: #f9f9f9
+  		font: 700 18px $BG
+  		color: $slateGrey
+    padding: 16px
+    line-height: 16px
+    border-radius: 4px
+    border: 1px solid $fadeGrey
+    @include xs
+      padding: 16px 16px 16px 36px
+  		&:focus
+  			outline: 0
+    input
+      width: 100%
+      height: 80px
+form.form-animated
+  div.form-input.focused
+    label
+      font: 400 14px $BG
+      top: 0
+    input
+      background: #ffffff
+      border: 1px solid $teal
+
+
+// style for address section - city, state, zipcode
+form.form-animated
+  div.one-third
+    div.form-input
+      width: calc(33.33% - 10px)
+      float: left
+      margin-right: 10px
+
+
+
+
+
+.offer-box
+  a
+    text-transform: none !important
+  a:hover
+    color: #slateGrey
+
+
+
+div.offer-box, div.favorite-box, div.redeem-box
+	background: #ffffff
+	border: 1px solid $fadeGrey
+	border-radius: 4px
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1)
+	-moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1)
+	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1)
+	transition: all 100ms $accCurve
+	cursor: pointer
+	&:hover
+		border: 1px solid grey
+		-webkit-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.1)
+		-moz-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.1)
+		box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.1)
+
+
+
+
+
+
+div.footer-link
+	a
+		font: 400 16px $BG
+		color: $fadeGrey
+		border-right: 1px solid $fadeGrey
+		padding: 0 30px
+		&:hover
+			color: #ffffff
+		@include xs
+			font: 400 12px $BG
+			padding: 0 10px
+
+div.footer-link
+  a:first-child
+    border-left: 1px solid $fadeGrey
+
+div.footer-copywrite
+	margin-top: 20px
+	font: 400 14px $BG
+	color: $slateGrey
+
+section.menu-mobile
+	width: 80%
+	height: 100vh
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: 1000
+	background: rgba(26, 42, 53, 1)
+	transform: translateX(-100%)
+	transition: all 400ms $decCurve
+
+section.menu-mobile-show
+	transform: translate(0)
+
+div.menu-mobile-content
+	width: 100%
+	padding: 10%
+
+div.back-button
+	width: 100%
+	height: 40px
+	padding: 10px 0 0 10px
+	svg.back-arrow
+		width: 80px
+		height: 40px
+		fill: $brightTeal
+
+div.menu-mobile-cat
+  padding-bottom: 30px
+  border-bottom: 1px solid $brightTeal
+
+div.cat-wrapper
+  width: 100%
+  height: 60px
+  // angular incapable
+  // padding: 5px
+  // angular incapable
+  padding: 5px 15px
+
+// angular capable
+div.cat-wrapper.highlight
+  background: #ffffff
+  border-radius: 30px
+
+
+section.menu-mobile
+  div.cat-text-field
+    padding-left: 20px
+    color: #c8c8c8
+    height: 40px
+    div.cat-name
+      height: 20px
+      font: 400 18px $BG
+      line-height: 20px
+    div.cat-count
+      height: 20px
+      font: 400 14px $BG
+      line-height: 20px
+
+img.cat-icon
+  width: 50px
+  height: 50px
+
+  div.mobile-cat-tag &
+    width: 40px
+    height: 40px
+
+
+
+.header-shift
+  width: 100%
+  height: 80px
+
+
+
+
+// style for HOME page
+section.headline
+  text-align: center
+  h1
+  p
+    width: 60%
+    @include xs
+      // width: 90%
+
+
+.expand
+  max-height: 1000px !important
+
+section.family
+	width: 100%
+	overflow: hidden
+	position: relative
+	@include xlg
+		height: 60vh
+	.image-desktop
+		@include xs
+			display: none
+	.image-mobile
+		display: none
+		@include xs
+			display: block
+
+
+	div.invite
+		width: 100%
+		padding: 5vh 0
+		background: rgba(25, 49, 70, .75)
+		position: absolute
+		top: 50%
+		left: 0
+		transform: translateY(-50%)
+  transition: all 1200ms $standardCurve
+		@include xs
+			position: relative
+			background: rgba(25, 49, 70, .9)
+			transform: translateY(0%)
+	div.invite
+		form.form-regular
+			h3
+				margin-bottom: 10px
+				color: #efefef
+				text-align: left
+			input
+				float: left
+				margin: 0
+			input[type="text"]
+				width: 70%
+				border-top-right-radius: 0px
+				border-bottom-right-radius: 0px
+				@include xs
+					width: 50%
+			input[type="submit"]
+				width: 30%
+				border-top-left-radius: 0px
+				border-bottom-left-radius: 0px
+				@include xs
+					width: 50%
+//
+// div.invite
+//   .enter-invite
+//   .get-invite
+//     visibility: hidden
+
+
+section.featured-homepage
+	width: 100%
+  padding: 30px
+	background: $teal
+
+section.guide
+  text-align: center
+  div.guide-box
+    padding: 60px
+
+    @include md
+      padding: 30px
+    @include sm
+      padding: 15px
+    @include xs
+      padding: 15px
+
+    img
+      padding: 0 20%
+      @include xs
+        padding: 10% 20% 0% 20%
+
+    div.block-teal
+      width: 100%
+      padding: 12px 0
+      background: $teal
+      margin-top: 20px
+      line-height: 40px
+      font: normal 13px $SQ
+      color: #ffffff
+      border-radius: 4px
+
+    p
+      margin-top: 15px
+      padding: 0 15px
+
+
+  .btn-3
+    width: auto
+    padding: 0 20px
+
+  // style for FEATURED OFFERS
+section.featured-homepage
+  .container
+    height: 100%
+
+div.carousel
+  transform: translateY(-50%)
+  @include sm
+    transform: translateY(-20%)
+  @include xs
+    transform: translateY(0)
+
+  div.slide
+    padding: 15px 7.5px
+    div.slide-inner
+      padding: 15px
+      background: #d3d3d3
+      border-radius: 4px
+      div.slide-inner-inner
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 45px 10px
+        background: #ffffff
+        border-radius: 4px
+
+        div.featured-logo
+          width: 40%
+        div.featured-offer
+          width: 60%
+          margin-left: 10px
+          h5
+            border-bottom: 1px solid $fadeGrey
+            padding-bottom: 5px
+            height: 45px
+            overflow: hidden
+          h6
+            height: 20px
+            overflow: hidden
+
+
+
+
+
+// style for 02_BROWSE page
+
+a.nav-profile
+  span
+    font: 400 14px $BG
+    padding-left: 5px
+// a.nav-favorite
+//   position: relative
+//   &:before
+//     content: ""
+//     display: block
+//     width: 20px
+//     height: 34px
+//     background-image: url('../svg/icon-bookmark.svg')
+//     background-repeat: no-repeat
+//     position: absolute
+//     top: -3px
+//     left: -30px
+
+section.gapper
+  height: 80px
+
+section.browse-wrapper
+  width: 100%
+  height: auto
+  display: relative
+
+
+  div.main-side-cat
+    display: block
+
+    @include xs
+      display: none
+    @include sm
+      display: none
+    @include md
+      display: none
+
+    div.side-cat-wrapper
+      display: relative
+      // angluar incapable
+      // div.highlight
+      //   width: 260px
+      //   height: 60px
+      //   background: rgba(255, 255, 255, .8)
+      //   position: absolute
+      //   top: 0
+      //   left: 0
+      //   z-index: 400
+      //   border-radius: 35px
+      //   margin-top: 5px
+      //   transition: all 300ms ease-in-out
+      //   transform: translate(-10px, -5px)
+
+      div.side-cat-wrapper-inner
+        position: absolute
+        left: 0
+        z-index: 500
+
+        svg.blue-icon
+        	width: 50px
+        	height: 50px
+        	fill: none
+        	stroke: $slateGrey
+        	stroke-width: 1.5
+        	stroke-miterlimit: 10
+        	vertical-align: top
+        div.cat-text-field
+        	padding-left: 20px
+        	color: $slateGrey
+        	height: 50px
+
+
+
+div.offer-cat-wrapper
+  padding: 60px 0
+  border-top: 1px solid $fadeGrey
+  &:first-child
+    padding: 0 0 60px 0
+    border-top: 0
+  @include sm
+    border-top: 0
+    padding: 10px 0
+
+  div.mobile-cat-tag
+    padding-bottom: 10px
+    display: none
+    @include xs
+      display: block
+    @include sm
+      display: block
+    @include md
+      display: block
+    span
+      font: 400 18px $BG
+      line-height: 30px
+      padding-left: 10px
+
+  div.offer-box
+    overflow: auto
+    margin-bottom: 15px
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    &:hover .offer-picture img
+      transform: scale(1.02, 1.02)
+    &:last-child
+      margin-bottom: 0
+    &.featured-browsepage
+      div.offer-picture
+        position: relative
+        &:before
+          content: ""
+          display: block
+          width: 150px
+          height: 47px
+          position: absolute
+          bottom: 30px
+          left: 5px
+          background-image: url('../svg/icon-banner.svg')
+          font: 700 18px $BG
+          color: #ffffff
+
+          z-index: 300
+        &:after
+          content: "Featured Offer"
+          display: block
+          width: 150px
+          height: 47
+          font: 400 16px $BG
+          color: #ffffff
+          position: absolute
+          bottom: 36px
+          left: 25px
+          z-index: 400
+
+    a
+      display: flex
+      flex-wrap: wrap
+
+div.offer-picture
+  div.offer-picture-frame
+    overflow: hidden
+    img
+      transition: all 300ms
+
+div.offer-info
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  padding-left: 0px
+  padding-right: 0px
+  div.offer-title
+    height: inherit
+    display: flex
+    align-items: center
+    @include sm
+      // order: 3
+      padding-bottom: 0
+
+    div.offer-title-inner
+      width: 100%
+      height: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      div.title-text
+        max-width: 100%
+        font: 700 36px $BG
+        line-height: 36px
+        text-align: center
+        text-transform: capitalize
+        @include sm
+          text-align: left
+
+div.offer-misc
+  @include xs
+    display: flex
+    flex-wrap: wrap
+  @include sm
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+  @include xs
+    align-items: center
+    justify-content: center
+
+div.offer-geo
+  border-bottom: solid 1px $fadeGrey
+  display: flex
+  align-items: center
+  @include sm
+    justify-content: flex-start
+    // border-bottom: 0
+    padding-left: 0
+    padding-right: 0
+  @include xs
+    display: flex
+    justify-content: center
+    border-bottom: 0
+    // border-top: solid 1px $fadeGrey
+  img.icon-beacon
+    width: 20px
+    height: 32px
+  div.geo-wrapper
+    position: relative
+    padding: 0 0 10px 25px
+    span.mile
+      margin-left: 10px
+      padding: 0 10px
+      background: $teal
+      font: 700 17px $BG
+      color: #ffffff
+      border-radius: 4px
+      @include md
+        display: block
+        margin-top: 5px
+        transform: translateX(-36px)
+      @include sm
+        display: block
+        margin-top: 5px
+        transform: translateX(-36px)
+    &:before
+      display: block
+      content: ''
+      width: 16px
+      height: 24px
+      background-image: url('../svg/icon-location.svg')
+      background-repeat: no-repeat
+      position: absolute
+      top: 0
+      left: 0
+
+div.offer-misc-logo
+  height: 50%
+  @include sm
+    justify-content: flex-start
+    padding-right: 0px
+    padding-left: 0px
+  @include xs
+    display: flex
+    justify-content: center
+
+  img.retailer-logo
+    width: auto
+    height: 50px
+
+img.icon-beacon
+  width: 12px
+  height: 39px
+
+div.loading-block
+  text-align: center
+  width: 100%
+  // background: grey
+  svg#loader
+    width: 100px
+    margin: 0 auto
+    stroke: $slateGrey
+    fill: transparent
+    animation: rotateCircle 3s linear infinite
+    circle
+      stroke:
+        dashoffest: 0
+        dasharray: 120
+        width: 5px
+        miterlimit: 10
+        linecap: round
+      animation: drawCircle 1s linear infinite
+
+@keyframes drawCircle
+  0%
+    stroke-dashoffset: 0
+  100%
+    stroke-dashoffset: -240
+@keyframes rotateCircle
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
+
+// style for 03_DETAIL page
+section.modal-custom
+  width: 100%
+  height: 100%
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: rgba(255,255,255, 0)
+  z-index: 2000
+  visibility: hidden
+  opacity: .5
+  transition: all 450ms ease-in-out
+
+  div.modal-custom-inner
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -85%)
+    background: #ffffff
+    transition: all 350ms ease-in-out
+    opacity: 0
+    img.btn-exit
+      display: block
+      float: right
+      width: 50px
+    div.modal-custom-inner-inner
+      text-align: center
+      min-width: 290px
+      max-width: 600px
+      padding: 80px 120px
+      background: #ffffff
+      img.modal-logo
+        display: block
+        margin: 0 auto
+      img.btn-exit
+        display: block
+        float: right
+        width: 40
+
+.show-modal
+  background: rgba(20,33,49,.8) !important
+  visibility: visible !important
+  opacity: 1 !important
+  div.modal-custom-inner
+    transform: translate(-50%, -50%) !important
+    opacity: 1 !important
+
+div.detail-logo
+  img
+    width: auto
+    height: 80px
+
+div.detail-map
+  p
+    margin: 0
+
+div.detail-content-inner
+  width: 100%
+  position: relative
+
+div.detail-title
+  font: 700 35px $BG
+  text-align: center
+  padding: 40px
+  // border: 1px solid $slateGrey
+  // background: #ffffff
+  // border-radius: 4px
+
+div.detail-restric
+  font: 700 24px $BG
+  div.restric-title
+    display: inline-block
+    border-bottom: 1px solid $fadeGrey
+
+section.detail-wrapper
+  div.redeem-code
+    display: none
+    @media print
+      display: block
+
+
+p.restric-expire, p.expire, p.offer-code
+  font: 400 16px $BG
+  color: $teal
+  span
+    margin-left: 5px
+    border-radius: 4px
+    background: $teal
+    padding: 2px 10px
+    font: 400 14px $BG
+    color: #ffffff
+
+p.offer-code
+  display: none
+
+p.detail-address
+  font-weight: 400
+
+
+.btn-action-container
+  @include lg
+    padding-right: 0 !important
+  @include xlg
+    padding-right: 0 !important
+
+
+.retailer-info-container
+  padding-top: 20px
+  h4
+    font: 700 24px $BG
+    display: inline-block
+    border-bottom: 1px solid #c8c8c8
+    color: $teal
+
+.retailer-info
+  padding: 5px 0
+  span
+    line-height: 24px
+    vertical-align: middle
+    position: relative
+    padding-left: 36px
+
+    &:before
+      display: inline-block
+      content: ''
+      width: 24px
+      height: 24px
+      position: absolute
+      top: 0
+      left: 0
+    &.retailer-addr:before
+      background: url(../svg/info-addr.svg)
+      background-repeat: no-repeat
+
+    &.retailer-url:before
+      background: url(../svg/info-url.svg)
+      background-repeat: no-repeat
+
+    &.retailer-phone:before
+      background: url(../svg/info-phone.svg)
+      background-repeat: no-repeat
+
+    &.retailer-email:before
+      background: url(../svg/info-email.svg)
+      background-repeat: no-repeat
+
+.detail-map-placeholder
+  border: 1px solid $lightGrey
+
+
+.modal-custom.modal-custom-inner
+  text-align: center
+.modal-logo
+  display: block
+  width: auto
+  height: 80px
+  margin: 0 auto
+
+
+
+
+// style for 04_FAVORITE page
+div.favorite-content
+  display: flex
+  flex-wrap: wrap
+
+div.favorite-box
+  margin: 15px 7.5px
+
+  padding: 20px
+  @include xlg
+    width: calc(25% - 15px)
+  @include lg
+    width: calc(25% - 15px)
+  @include md
+    width: calc(33.33% - 15px)
+  @include sm
+    width: calc(50% - 15px)
+  @include xs
+    width: calc(100% - 15px)
+
+  img.favorite-logo
+    width: auto
+    height: 50px
+    display: block
+  img.favorite-image
+    width: 100%
+
+.favorite-box
+  h5
+    overflow: hidden
+    font: 900 30px $BG
+    line-height: 30px
+    padding: 10px 0 0 0
+  h6
+    overflow: hidden
+    padding-bottom: 20px
+    border-bottom: 1px solid #dfdfdf
+
+div.favorite-geo
+
+div.geo-city
+  position: relative
+  margin-bottom: 10px
+  &:before
+    display: block
+    content: ''
+    background-image: url('../svg/icon-location.svg')
+    background-repeat: no-repeat
+    width: 16px
+    height: 24px
+    position: absolute
+    top: 0
+    left: 0
+
+div.geo-mile
+  display: inline-block
+  line-height: 24px
+  padding: 0 10px
+  background: $teal
+  border-radius: 4px
+  color: #ffffff
+  font: 700 17px $BG
+
+
+div.favorite-geo
+
+  div.geo-city
+    position: relative
+    padding-left: 24px
+    line-height: 30px
+    &:before
+      display: block
+      content: ''
+      background-image: url('../svg/icon-location.svg')
+      background-repeat: no-repeat
+      width: 16px
+      height: 24px
+      position: absolute
+      top: 0
+      left: 0
+
+
+
+
+div.title-text
+  max-width: 100%
+  font: 700 18px $BG
+  line-height: 18px
+  text-align: left
+  color: $slateGrey
+  @include xs
+    text-align: center
+
+div.favorite-content
+  button
+    &:last-child
+      margin-bottom: 0
+
+
+// style for PROFILE page
+div.profile-name
+  font: 700 35px $BG
+div.profile-info-row
+  margin-top: 15px
+
+
+div.profile-data-wrapper
+  width: 100%
+  height: 50px
+
+
+
+div.profile-box
+  width: 100%
+  display: block
+  float: left
+  height: 50px
+  line-height: 50px
+  background: #ffffff
+  border: 1px solid $fadeGrey
+  border-top-left-radius: 4px
+  border-top-right-radius: 4px
+  cursor: initial
+  box-shadow: none
+
+  span
+    display: inline-block
+    padding-left: 15px
+  span.title
+    width: 25%
+    font: 400 18px $BG
+    @include xs
+      display: none
+  span.profile-data
+    width: 45%
+
+  .btn
+    height: 50px
+    float: right
+    padding: 0 15px 0 40px
+    background: $teal
+    color: #ffffff
+    line-height: 50px
+
+    font: 400 18px $BG
+    // transform: translate(1px, -1px)
+    border: 1px solid $fadeGrey
+    position: relative
+
+    &:hover
+      background: $lightTeal
+  .btn-edit
+    &:before
+      content: ""
+      display: block
+      width: 24px
+      height: 24px
+      background-image: url('../svg/icon-pen.svg')
+      line-height: 50px
+      position: absolute
+      top: 12px
+      left: 10px
+  .btn-close
+    &:before
+      content: ""
+      display: block
+      width: 24px
+      height: 24px
+      background-image: url('../svg/icon-x.svg')
+      line-height: 50px
+      position: absolute
+      top: 12px
+      left: 10px
+
+
+
+div.profile-edit-wrapper
+  border-left: 1px solid $fadeGrey
+  border-right: 1px solid $fadeGrey
+  border-bottom: 1px solid $fadeGrey
+  background: #dfdfdf
+  input.profile_update
+    margin: 15px 0
+    transform: translateX(15px)
+    height: 40px
+    font: 400 18px $BG
+    border: 0
+
+div.profile-edit-row
+  width: 100%
+  padding-top: 15px
+  label
+    display: block
+    float: left
+    font: 400 18px $BG
+    width: 25%
+    padding-left: 15px
+    line-height: 30px
+  input[type="text"]
+    width: 45%
+    height: 30px
+    font: 400 16px $BG
+    border: 0
+    transform: translateX(15px)
+
+  &:last-child
+    padding-bottom: 15px
+
+
+
+
+
+
+
+
+
+// style for LOGIN-REGISTER page
+section.register-wrapper, section.login-wrapper
+  width: 100%
+  max-width: 480px
+
+
+
+div.user-switch
+  font: 700 18px $BG
+  text-align: center
+  margin: 15px 0
+
+  div.user-register, div.user-login
+    border-bottom: 1px solid $fadeGrey
+    &:hover
+      cursor: pointer
+      border-bottom: 1px solid $teal
+
+
+
+
+
+
+div.form-input
+  margin-top: 8px
+  &:last-child
+    margin-bottom: 8px
+  input[type="text"], input[type="email"], input[type="password"]
+
+    &:valid
+      & + label
+        // opacity: 0
+
+    &:valid ~ div.valid
+      opacity: 1
+
+    &:invalid:focus:not(:placeholder-shown)
+      & ~ div.form-msg
+        max-height: 300px
+        padding: 8px 16px
+
+
+  div.form-msg
+    max-height: 0
+    overflow: hidden
+    font: 700 16px $BG
+    color: #9b0047
+    // background: #ffffff
+    padding: 0 16px
+    transition: all 500ms $standardCurve
+
+
+div.valid
+  position: absolute
+  top: 16px
+  left: 0
+  opacity: 0
+  transition: opacity 200ms $standardCurve
+  div.checkmark
+    position: relative
+    &:before
+      content: ""
+      display: block
+      width: 20px
+      height: 20px
+      background-image: url('../svg/icon-checkmark.svg')
+      position: absolute
+      left: -30px
+      top: 2px
+      @include xs
+        top: 2px
+        left: 10px
+
+
+
+.row-socialLogin
+
+  border-top: 1px solid $fadeGrey
+  margin-top: 30px
+  padding-top: 30px
+
+
+
+// style for REDEEM page
+div.redeem-box
+  padding: 15px
+
+  img.redeem-logo
+    width: auto
+    height: 50px
+    display: block
+  img.favorite-image
+    width: 100%
+
+.redeem-box
+  h5
+    overflow: hidden
+    font: 900 30px $BG
+    line-height: 30px
+    // height: 80px
+    padding: 10px 0 0 0
+  h6
+    overflow: hidden
+    // height: 60px
+    padding-bottom: 20px
+    border-bottom: 1px solid #dfdfdf
+
+.redeem-code
+  border-radius: 4px
+  background: $teal
+  text-align: center
+  padding: 45px 15px
+  span
+    display: block
+    color: #ffffff
+
+  span.code-title
+  span.code-digit
+    font: 800 40px $BG
+
+div.explore-offer
+  text-align: right
+  span
+    display: block
+
+
+
+
+
+
+.padding-set1
+  padding-top: 15px
+  padding-bottom: 15px
+.padding-none
+  padding-right: 0 !important
+  padding-left: 0 !important
+
+img.icon-cat
+  width: 50px
+  height: 50px
+  vertical-align: top
+
+img.icon-cat-mobile
+  width: 40px
+  height: 40px
+  vertical-align: top
+
+.flex-box
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+
+// .container
+//   @include xs
+//     margin: 0
+//     padding: 0
+
+
+div.cat-name
+  height: 25px
+  font: 400 18px $BG
+  vertical-align: text-bottom
+
+div.cat-count
+  height: 25px
+  font: 400 14px $BG
+  line-height: 25px
+  vertical-align: top
+
+
+
+//// styles for print layout in browsing page
+
+@media print
+  *
+    -webkit-print-color-adjust: exact
+    print-color-adjust: exact
+
+  body
+    width: 60%
+
+  header, .header-shift, button, .detail-map-placeholder, .btn-redeem, footer
+    display: none
+
+  .white-box
+    border: 0 !important
+  .detail-title
+    padding: 20px 10px !important
+    border: 0 !important
+    text-align: center !important
+
+
+
+
+
+
+
+// add by Soumya
+
+.side-cat-fixed
+  max-width: 285px
+  position: fixed
+  z-index: 1000
+
+.seudo-block
+  background-color: #efefef
+
+.seudo-block
+  display: none
+
+.seudo-block-display
+  display: block
+
+
+
+
+
+
+// additional style for different status and scenario
+.get-offer
+  span
+    padding: 0 15px
+
+
+
+
+.whitebox
+  background: #ffffff
+  border: 1px solid black
+  border-radius: 4px
+
+.centered
+  max-width: calc(50% - 32px)
+  display: flex
+  align-items: center
+  justify-content: center
+
+  @include md
+    max-width: calc(100% - 32px)
+  @include sm
+    max-width: calc(100% - 32px)
+  @include xs
+    max-width: calc(100% - 32px)
+
+.centered-regular
+  max-width: 50%
+  display: flex
+  align-items: center
+  justify-content: start
+
+
+
+
+
+
+
+.slick-dots li button:before
+  color: #ffffff !important
+.slick-dots li.slick-active button:before
+  color: #ffffff !important
+
+
+
+
+// ng2-toaster.css styles override
+#toast-container > div
+  opacity: 1
+#toast-container > :hover
+  box-shadow: none
+  -webkit-box-shadow: none
+  cursor: default
+
+.toast-top-full-width, .toast-bottom-full-width
+  @include xs
+    padding: 0 30px
+  @include sm
+    padding: 0 30px
+
+.toast-top-full-width, .toast-bottom-full-width
+  background: #dfdfdf
+  border-top: 1px solid $fadeGrey
+
+
+.toast
+  width: 100%
+  max-width: 1140px
+  margin: 0 auto
+  background: transparent
+  box-shadow: none
+  -webkit-box-shadow: none
+
+#toast-container > div.toast-custom
+  padding: 30px 0px
+
+.toast-message strong
+  font: 700 18px $BG
+  color: $slateGrey
+
+#toast-container > div
+  box-shadow: none
+  -webkit-box-shadow: none
+
+.toast-close-button
+  position: absolute !important
+  top: 50% !important
+  right: 0 !important
+  text-shadow: none !important
+  font-size: 40px !important
+  transform: translateY(-50%) !important
+
+.toast-message
+  display: block
+  width: 100%
+  padding-right: 60px
+
+.toast-message a:hover
+  color: inherit
