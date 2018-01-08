@@ -133,12 +133,20 @@ $('form.form-animated input').focusout(function(){
   }
 });
 
+
+
+
+
+
+
 $('.hamburger').click(function(){
-  $('section.menu-mobile').addClass('menu-mobile-show')
+  $('section.menu-mobile').addClass('menu-mobile-show');
+  $('section.overlay').addClass('overlay-show');
 })
 
 $('.back-arrow').click(function(){
-  $('section.menu-mobile').removeClass('menu-mobile-show')
+  $('section.menu-mobile').removeClass('menu-mobile-show');
+    $('section.overlay').removeClass('overlay-show');
 })
 
 
