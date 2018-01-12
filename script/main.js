@@ -162,3 +162,39 @@ $('button.show-notice').click(function(){
 $('.btn-exit').click(function(){
   $('section.notice').removeClass('show')
 })
+
+
+
+// hamburger animation
+var clicked = false;
+$('button#burger').click(function(){
+
+  // activate mobile menu
+  if(clicked == false){
+    $('section.menu-mobile').addClass('menu-mobile-show');
+    $('.bun').addClass('squeeze__bun');
+    setTimeout(function(){
+      $('#patty').addClass('hide__patty')
+    }, 100)
+    setTimeout(function(){
+      $('#bun__top').addClass('rotateClockwise');
+      $('#bun__bottom').addClass('rotateCounterClockwise');
+    }, 150)
+    clicked = true;
+  }
+  // activate mobile menu
+  else{
+    $('section.menu-mobile').removeClass('menu-mobile-show');
+    $('#bun__top').removeClass('rotateClockwise');
+    $('#bun__bottom').removeClass('rotateCounterClockwise');
+    setTimeout(function(){
+      $('#patty').removeClass('hide__patty')
+    }, 100)
+    setTimeout(function(){
+      $('.bun').removeClass('squeeze__bun');
+    }, 150)
+    clicked = false;
+  }
+
+
+});

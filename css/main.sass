@@ -196,13 +196,19 @@ a.teal
 
 
 header
+  div.container
+    @include xs
+      // padding: 0
+
+
+header
   .container
     @include md
       padding: 0
     @include sm
       padding: 0
     @include xs
-      margin: 0
+      // margin: 0
 
 
 header
@@ -226,7 +232,7 @@ header
 		display: none
 		@include xs
 			width: auto
-			height: 60px
+			height: 50px
 			display: inline-block
 	img.logo
 		width: 240px
@@ -599,59 +605,59 @@ section.overlay
 section.overlay-show
   display: block
 
-section.menu-mobile
-	width: 80%
-	height: 100vh
-	position: fixed
-	top: 0
-	left: 0
-	right: 0
-	bottom: 0
-	z-index: 1000
-	background: rgba(26, 42, 53, 1)
-	transform: translateX(-100%)
-	transition: all 400ms $decCurve
 
-section.menu-mobile-show
-	transform: translate(0)
-
-div.menu-mobile-content
-	width: 100%
-	padding: 0 5%
-
-div.back-button
-	width: 100%
-	height: 60px
-	svg.back-arrow
-		width: 60px
-		height: 40px
-		fill: $brightTeal
-  margin: 10px 0
-
-div.menu-mobile-cat
-  padding-bottom: 30px
-  border-bottom: 1px solid $brightTeal
-
+// categories in desktop screen
 div.cat-wrapper
-  width: 100%
-  height: 50px
   // angular incapable
   // padding: 5px
   // angular incapable
-  padding: 5px 10px
+  padding: 5px 20px
 
 // angular capable
 div.cat-wrapper.highlight
   background: #ffffff
   border-radius: 30px
 
-
-div.divider-teal
+div.cat-wrapper
   width: 100%
-  margin: 4vh 0
-  padding: 0 5%
-  height: 1px
-  background: $lightTeal
+  height: 60px
+  a
+    display: table
+    border-collapse: collapse
+    height: 50px
+    img
+      width: 50px
+      height: 50px
+      display: table-cell
+      vertical-align: middle
+    div.cat-text-field
+      display: table-cell
+      vertical-align: middle
+      div
+        height: 20px
+
+
+
+// categories in mobile menu
+
+section.menu-mobile
+	width: 100%
+	height: auto
+ min-height: calc( 50px + 100vh )
+	position: fixed
+	top: 60px
+	left: 0
+	// right: 0
+	// bottom: 0
+	z-index: 1000
+	background: rgba(26, 42, 53, 1)
+	transform: translateX(-100%)
+	transition: all 400ms $decCurve
+
+section.menu-mobile
+  div.cat-wrapper
+    &:first-child
+      margin-top: 10px
 
 section.menu-mobile
   div.cat-text-field
@@ -676,45 +682,63 @@ section.menu-mobile
       margin: 0
       color: #ffffff
 
+section.menu-mobile
+  div.cat-wrapper
+    height: 40px
+    padding: 0
+    margin-bottom: 10px
+
+div.menu-mobile-content
+	width: 100%
+	padding: 0 5%
+
+section.menu-mobile-show
+	transform: translate(0)
+
+// div.back-button
+// 	width: 100%
+// 	height: 60px
+// 	svg.back-arrow
+// 		width: 60px
+// 		height: 40px
+// 		fill: $brightTeal
+//   margin: 10px 0
+
+div.divider-teal
+  width: 100%
+  margin: 15px 0
+  height: 1px
+  background: $lightTeal
+
+section.menu-mobile
   nav.mobile-nav-set1
-    line-height: 36px
+    padding-top: 15px
     a
       display: block
-      padding: 5px 10px
-      font: 700 18px $BG
+      padding-bottom: 10px
+      font: 300 18px $BG
       position: relative
       &:after
         display: none
+      span
+        font: 700 15px $BG
+        padding-left: 5px
+        color: #ffffff
     a.nav-favorite
-      padding-left: calc( 10px + 40px + 20px + 5px )
-      line-height: 40px
+
     a.nav-favorite:after
       display: none
     a.nav-favorite:before
-        display: block
-        content: ''
-        width: 40px
-        height: 40px
-        background-image: url('../svg/icon-favorite.svg')
-        background-repeat: no-repeat
-        position: absolute
-        top: 50%
-        left: 20px
-        transform: translate(0%, -50%)
-
-
-
-  nav.mobile-nav-set2
-    a
-      display: block
-      font: 400 15px $BG
-      color: #c8c8c8
-      span
-        font: 700 15px $BG
-        color: #ffffff
-
-
-
+        // display: block
+        // content: ''
+        // width: 40px
+        // height: 40px
+        // background-image: url('../svg/icon-favorite.svg')
+        // background-repeat: no-repeat
+        // position: absolute
+        // top: 50%
+        // left: 20px
+        // transform: translate(0%, -50%)
 
 
 
@@ -798,6 +822,25 @@ section.family
 				border-bottom-left-radius: 0px
 				@include xs
 					width: 50%
+
+div.invite
+  div.error-msg
+    display: block
+    color: #ffffff
+    font: 700 17px $BG
+    position: relative
+    padding: 10px 0 10px 24px
+  div.error-msg:before
+    content: ''
+    display: block
+    width: 20px
+    height: 20px
+    background-image: url('../svg/icon-exclamationmark.svg')
+    position: absolute
+    top: 10px
+    left: 0
+
+
 //
 // div.invite
 //   .enter-invite
@@ -1687,10 +1730,6 @@ div.explore-offer
   padding-right: 0 !important
   padding-left: 0 !important
 
-img.icon-cat
-  width: 50px
-  height: 50px
-  vertical-align: top
 
 img.icon-cat-mobile
   width: 40px
@@ -1711,7 +1750,7 @@ img.icon-cat-mobile
 div.cat-name
   height: 25px
   font: 400 18px $BG
-  vertical-align: text-bottom
+
 
 div.cat-count
   height: 25px
@@ -1867,3 +1906,55 @@ div.cat-count
 
 .toast-message a:hover
   color: inherit
+
+
+
+
+
+// styles for mobile menu button animation
+
+header
+  div.col
+    @include xs
+      padding: 0
+      margin: 0
+  div.logo
+    width: auto
+    height: 80px
+
+button#burger
+  width: 60px
+  height: 60px
+  position: relative
+  margin: 0
+  z-index: 2000
+  display: none
+  float: left
+  @include sm
+    display: inline-block
+  @include xs
+    display: inline-block
+  span.bun
+    display: block
+    width: 30px
+    height: 4px
+    background: $slateGrey
+    border-radius: 2px
+    position: absolute
+    left: 12px
+    transition: all 150ms $standardCurve
+    &:nth-child(1)
+      top: 18px
+    &:nth-child(2)
+      top: 27px
+    &:nth-child(3)
+      top: 36px
+  span.bun.squeeze__bun
+    top: 27px
+
+span.hide__patty
+  display: none !important
+span.rotateClockwise
+  transform: rotate(45deg)
+span.rotateCounterClockwise
+  transform: rotate(-45deg)
