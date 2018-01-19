@@ -413,7 +413,7 @@ form.form-animated div.form-input {
     position: absolute;
     top: 16px;
     left: 16px;
-    font: 400 18px "Brandon Grotesque";
+    font: 700 16px "Brandon Grotesque";
     color: #989eaf;
     text-transform: capitalize;
     transition: all 150ms cubic-bezier(0.4, 0, 1, 1);
@@ -440,7 +440,7 @@ form.form-animated div.form-input {
       height: 80px; }
 
 form.form-animated div.form-input.focused label {
-  font: 400 14px "Brandon Grotesque";
+  font: 700 16px "Brandon Grotesque";
   top: 0; }
 
 form.form-animated div.form-input.focused input {
@@ -536,15 +536,14 @@ div.cat-wrapper {
 
 section.menu-mobile {
   width: 100%;
-  height: auto;
-  min-height: calc( 50px + 100vh);
   position: fixed;
   top: 60px;
-  left: 0;
+  bottom: 0;
   z-index: 1000;
   background: #1a2a35;
   transform: translateX(-100%);
-  transition: all 400ms cubic-bezier(0, 0, 0.2, 1); }
+  transition: all 400ms cubic-bezier(0, 0, 0.2, 1);
+  overflow-y: scroll; }
 
 section.menu-mobile div.cat-wrapper:first-child {
   margin-top: 10px; }
@@ -692,6 +691,13 @@ div.invite div.error-msg:before {
   position: absolute;
   top: 10px;
   left: 0; }
+
+input.form--invitation[type="text"] {
+  background: #ffffff !important;
+  border: 1px solid #c8c8c8; }
+
+input.form--invitation[type="submit"] {
+  border: none; }
 
 section.featured-homepage {
   width: 100%;
@@ -1648,3 +1654,8 @@ span.rotateClockwise {
 
 span.rotateCounterClockwise {
   transform: rotate(-45deg); }
+
+.err-msg {
+  font: 700 16px "Brandon Grotesque";
+  color: #9b0047;
+  padding-top: 5px; }

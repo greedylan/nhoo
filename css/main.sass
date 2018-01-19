@@ -500,7 +500,7 @@ form.form-animated
   		position: absolute
     top: 16px
   		left: 16px
-  		font: 400 18px $BG
+  		font: 700 16px $BG
   		color: $lightGrey
   		text-transform: capitalize
   		transition: all 150ms $accCurve
@@ -526,7 +526,7 @@ form.form-animated
 form.form-animated
   div.form-input.focused
     label
-      font: 400 14px $BG
+      font: 700 16px $BG
       top: 0
     input
       background: #ffffff
@@ -540,10 +540,6 @@ form.form-animated
       width: calc(33.33% - 10px)
       float: left
       margin-right: 10px
-
-
-
-
 
 .offer-box
   a
@@ -642,17 +638,14 @@ div.cat-wrapper
 
 section.menu-mobile
 	width: 100%
-	height: auto
- min-height: calc( 50px + 100vh )
 	position: fixed
 	top: 60px
-	left: 0
-	// right: 0
-	// bottom: 0
+	bottom: 0
 	z-index: 1000
 	background: rgba(26, 42, 53, 1)
 	transform: translateX(-100%)
 	transition: all 400ms $decCurve
+ overflow-y: scroll
 
 section.menu-mobile
   div.cat-wrapper
@@ -840,13 +833,11 @@ div.invite
     top: 10px
     left: 0
 
-
-//
-// div.invite
-//   .enter-invite
-//   .get-invite
-//     visibility: hidden
-
+input.form--invitation[type="text"]
+  background: #ffffff !important
+  border: 1px solid #c8c8c8
+input.form--invitation[type="submit"]
+  border: none
 
 section.featured-homepage
 	width: 100%
@@ -1958,3 +1949,11 @@ span.rotateClockwise
   transform: rotate(45deg)
 span.rotateCounterClockwise
   transform: rotate(-45deg)
+
+
+
+
+.err-msg
+  font: 700 16px "Brandon Grotesque"
+  color: #9b0047
+  padding-top: 5px

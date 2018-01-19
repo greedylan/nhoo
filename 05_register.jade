@@ -80,9 +80,11 @@ html
           div.col  
             div.user-login.col I AM A NEW USER
     
+      
     
-      //either turn this off
-      div.box-register.top-buffer-sm
+    
+      //either turn this off (I HAVE AN ACCOUNT)
+      //- div.box-register.top-buffer-sm
         div.row
           div.col
             form.form-animated
@@ -163,9 +165,8 @@ html
                   | and 
                   a.teal-1(href="") Privacy Notice
                 
-
-      //or turn this off          
-      div.box-signin.top-buffer-sm
+      //or turn this off (I AM A NEW USER - CREATE AACOUNT)          
+      //- div.box-signin.top-buffer-sm
         div.row
           div.col
             form.form-animated
@@ -178,13 +179,23 @@ html
               div.form-input
                 input(type="password" id="pw-login" required)
                 label(for="pw-login") Password
-                
             
               button.btn-action.btn-2 Log in
               
               a.teal-1(href="") Forgot your password? 
+              
+      //or turn this off (I AM A NEW USER - CREATE AACOUNT)  
+      div.box-enterCode.top-buffer-sm
+        div.row
+          div.col
+            form.form-regular
+              input.form--invitation(type="text" required)
+              input.form--invitation(type="submit" value="submit")
+              br
+              a.teal-1 Get Invitation Codes
+              
             
-      div.row-socialLogin.row.top-buffer-sm              
+      //- div.row-socialLogin.row.top-buffer-sm              
         div.facebook-login.col(style="background: pink") facebook button goes here
         div.google-login.col(style="background: grey") google  button goes here
     
