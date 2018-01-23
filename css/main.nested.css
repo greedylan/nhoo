@@ -845,10 +845,7 @@ div.offer-cat-wrapper {
       padding-left: 10px; }
   div.offer-cat-wrapper div.offer-box {
     overflow: auto;
-    margin-bottom: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center; }
+    margin-bottom: 15px; }
     div.offer-cat-wrapper div.offer-box:hover .offer-picture img {
       transform: scale(1.02, 1.02); }
     div.offer-cat-wrapper div.offer-box:last-child {
