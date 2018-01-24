@@ -270,7 +270,7 @@ button:disabled {
   margin-top: 10px;
   border: none;
   border-radius: 4px;
-  font: normal 13px "Sequel";
+  font: normal 14px "Sequel";
   text-transform: uppercase;
   letter-spacing: .5px;
   cursor: pointer; }
@@ -619,7 +619,11 @@ img.cat-icon {
 section.headline {
   text-align: center; }
   section.headline p {
-    width: 60%; }
+    width: 60%;
+    max-wdith: 640px; }
+    @media (max-width: 767px) and (min-width: 0px) {
+      section.headline p {
+        width: 80%; } }
 
 .expand {
   max-height: 1000px !important; }
@@ -728,7 +732,7 @@ section.guide {
       background: #00999e;
       margin-top: 20px;
       line-height: 40px;
-      font: normal 13px "Sequel";
+      font: normal 14px "Sequel";
       color: #ffffff;
       border-radius: 4px; }
     section.guide div.guide-box p {
