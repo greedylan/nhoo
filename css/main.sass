@@ -387,37 +387,26 @@ button
   @include xs
     display: block
 
-.btn-anchorOffer
+.offer-anchor
   height: 40px
-  padding: 5px 20px
+  padding: 10px 20px
   border-radius: 20px
   font: normal 14px $SQ
   background: #ffffff
   border: 1px solid $teal
   transition: all 200ms $standardCurve
-  // float: right
+  color: $teal
   &:hover
     border: 1px solid $lightTeal
-    // background: $slateGrey
     background: $darkBlue
-    a
-      // color: $lightTeal
-      // color: #ffffff
-      color: $brightTeal
-
-
-  a
-    color: $teal
-    transition: all 200ms $standardCurve
-    &:hover
-      // color: $lightTeal
-    &:before
-      display: inline-block
-      content: ''
-      width: 28px
-      height: 14px
-      background-image: url('../svg/icon-previous.svg')
-      margin-right: 10px
+    color: $brightTeal
+  &:before
+    display: inline-block
+    content: ''
+    width: 28px
+    height: 14px
+    background-image: url('../svg/icon-previous.svg')
+    margin-right: 10px
 
 
 
