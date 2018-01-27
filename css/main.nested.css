@@ -319,7 +319,7 @@ button:disabled {
     .btn-redeem {
       display: block; } }
 
-.offer-anchor {
+.offer-anchor__link {
   height: 40px;
   padding: 10px 20px;
   border-radius: 20px;
@@ -328,11 +328,11 @@ button:disabled {
   border: 1px solid #00999e;
   transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #00999e; }
-  .offer-anchor:hover {
+  .offer-anchor__link:hover {
     border: 1px solid #0bb2b2;
     background: #163144;
     color: #19e8ef; }
-  .offer-anchor:before {
+  .offer-anchor__link:before {
     display: inline-block;
     content: '';
     width: 28px;
@@ -1135,7 +1135,7 @@ p.detail-address {
     color: #00999e; }
 
 .retailer-info {
-  padding: 5px 0; }
+  padding: 0 0 5px 0; }
   .retailer-info span {
     line-height: 24px;
     vertical-align: middle;
@@ -1444,7 +1444,7 @@ div.redeem-box {
   border-radius: 4px;
   background: #00999e;
   text-align: center;
-  padding: 45px 15px; }
+  padding: 30px 15px; }
   .redeem-code span {
     display: block;
     color: #ffffff; }
@@ -1489,15 +1489,23 @@ div.cat-count {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact; }
   body {
-    width: 60%; }
-  header, .header-shift, button, .detail-map-placeholder, .btn-redeem, footer {
+    width: 60% !important; }
+  .menu-mobile, header, .header-shift, button, .detail-map-placeholder, .btn-redeem, footer, .offer-anchor__link, .offer-status {
     display: none; }
+  .detail-logo img {
+    width: 40% !important;
+    height: auto !important; }
+  .detail-image img {
+    width: 50% !important;
+    height: auto !important; }
   .white-box {
     border: 0 !important; }
   .detail-title {
     padding: 20px 10px !important;
     border: 0 !important;
-    text-align: center !important; } }
+    text-align: center !important; }
+  .top-buffer-xs {
+    margin-top: 10px !important; } }
 
 .side-cat-fixed {
   max-width: 285px;

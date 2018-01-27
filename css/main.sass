@@ -387,7 +387,7 @@ button
   @include xs
     display: block
 
-.offer-anchor
+.offer-anchor__link
   height: 40px
   padding: 10px 20px
   border-radius: 20px
@@ -1309,7 +1309,7 @@ p.detail-address
     color: $teal
 
 .retailer-info
-  padding: 5px 0
+  padding: 0 0 5px 0
   span
     line-height: 24px
     vertical-align: middle
@@ -1682,7 +1682,7 @@ div.redeem-box
   border-radius: 4px
   background: $teal
   text-align: center
-  padding: 45px 15px
+  padding: 30px 15px
   span
     display: block
     color: #ffffff
@@ -1746,17 +1746,31 @@ div.cat-count
     print-color-adjust: exact
 
   body
-    width: 60%
+    width: 60% !important
 
-  header, .header-shift, button, .detail-map-placeholder, .btn-redeem, footer
+  .menu-mobile, header, .header-shift, button, .detail-map-placeholder, .btn-redeem, footer, .offer-anchor__link, .offer-status
     display: none
+
+  .detail-logo
+    img
+      width: 40% !important
+      height: auto !important
+  .detail-image
+    img
+      width: 50% !important
+      height: auto !important
+
 
   .white-box
     border: 0 !important
+
   .detail-title
     padding: 20px 10px !important
     border: 0 !important
     text-align: center !important
+
+  .top-buffer-xs
+    margin-top: 10px !important
 
 
 
