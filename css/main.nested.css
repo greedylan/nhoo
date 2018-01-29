@@ -829,8 +829,7 @@ div.offer-cat-wrapper {
       border-top: 0;
       padding: 10px 0; } }
   div.offer-cat-wrapper div.mobile-cat-tag {
-    padding-bottom: 10px;
-    display: none; }
+    padding-bottom: 10px; }
     @media (max-width: 767px) and (min-width: 0px) {
       div.offer-cat-wrapper div.mobile-cat-tag {
         display: block; } }
@@ -1489,7 +1488,8 @@ div.cat-count {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact; }
   body {
-    width: 60% !important; }
+    width: 60% !important;
+    display: block !important; }
   .menu-mobile, header, .header-shift, button, .detail-map-placeholder, .btn-redeem, footer, .offer-anchor__link, .offer-status {
     display: none; }
   .detail-logo img {
