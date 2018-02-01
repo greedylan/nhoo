@@ -52,16 +52,18 @@ body {
 
 h1 {
   font-family: "Open Sans";
-    font-family-text-transform: capitalize;
+  text-transform: capitalize;
   font-weight: 800;
   font-size: calc( 30px + (45 - 30) * ( (100vw - 320px) / ( 2000 - 320) )); }
 
 h2 {
   font: 800 24px "Open Sans";
+  text-transform: capitalize;
   color: #4f5b69; }
 
 h3 {
   font: 800 14px "Open Sans";
+  text-transform: capitalize;
   color: #4f5b69; }
 
 h3.white {
@@ -272,7 +274,7 @@ button:disabled {
   border: none;
   border-radius: 4px;
   font: 800 14px "Open Sans";
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: .5px;
   cursor: pointer; }
   .btn-action:focus {
@@ -325,6 +327,7 @@ button:disabled {
   padding: 10px 20px;
   border-radius: 20px;
   font: 800 14px "Open Sans";
+  text-transform: capitalize;
   background: #ffffff;
   border: 1px solid #00999e;
   transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -378,6 +381,7 @@ form input[type="submit"] {
   background: #00999e;
   color: #ffffff;
   font: 800 14px "Open Sans";
+  text-transform: capitalize;
   padding: 0 20px;
   height: 50px; }
 
@@ -400,7 +404,8 @@ form.form-regular input[type="submit"] {
   background: #00999e;
   color: #ffffff;
   font: 800 14px "Open Sans";
-  padding: 0 20px; }
+  padding: 0 20px;
+  text-transform: capitalize; }
   form.form-regular input[type="submit"]:hover {
     background: #0bb2b2; }
 
@@ -731,6 +736,7 @@ section.guide {
       margin-top: 20px;
       line-height: 40px;
       font: 800 14px "Open Sans";
+      text-transform: capitalize;
       color: #ffffff;
       border-radius: 4px; }
     section.guide div.guide-box p {

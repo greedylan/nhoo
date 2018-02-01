@@ -88,6 +88,7 @@ $darkBlue: #163144
 
 $SQ: 'Sequel'
 $BG: 'Brandon Grotesque'
+$OS: 'Open Sans'
 
 $standardCurve: cubic-bezier(0.4, 0.0, 0.2, 1)
 $decCurve: cubic-bezier(0.0, 0.0, 0.2, 1)
@@ -112,14 +113,17 @@ body
   -webkit-font-smoothing: antialiased
 
 h1
-	font-family: $SQ
-	font-weight: normal
+	font-family: $OS
+ text-transform: capitalize
+	font-weight: 800
 	font-size: calc( 30px + (45 - 30) * ( (100vw - 320px) / ( 2000 - 320) ))
 h2
-	font: normal 24px $SQ
+	font: 800 24px $OS
+ text-transform: capitalize
 	color: $slateGrey
 h3
-	font: normal 14px $SQ
+	font: 800 14px $OS
+ text-transform: capitalize
 	color: $slateGrey
 h3.white
   color: #ffffff
@@ -345,8 +349,8 @@ button
 	margin-top: 10px
 	border: none
 	border-radius: 4px
-	font: normal 14px $SQ
-	text-transform: uppercase
+	font: 800 14px $OS
+	text-transform: capitalize
 	letter-spacing: .5px
 	cursor: pointer
 	&:focus
@@ -391,7 +395,8 @@ button
   height: 40px
   padding: 10px 20px
   border-radius: 20px
-  font: normal 14px $SQ
+  font: 800 14px $OS
+  text-transform: capitalize
   background: #ffffff
   border: 1px solid $teal
   transition: all 200ms $standardCurve
@@ -454,7 +459,9 @@ form
   input[type="submit"]
     background: $teal
     color: #ffffff
-    font: normal 14px $SQ
+    font: 800 14px $OS
+
+    text-transform: capitalize
     padding: 0 20px
     height: 50px
 
@@ -476,8 +483,9 @@ form.form-regular
 	input[type="submit"]
 		background: $teal
 		color: #ffffff
-		font: normal 14px $SQ
+		font: 800 14px $OS
 		padding: 0 20px
+  text-transform: capitalize
 		&:hover
 			background: $lightTeal
 
@@ -491,7 +499,7 @@ form.form-animated
   		left: 16px
   		font: 700 16px $BG
   		color: $lightGrey
-  		text-transform: capitalize
+  	 text-transform: capitalize
   		transition: all 150ms $accCurve
     background: transparent
     @include xs
@@ -857,7 +865,8 @@ section.guide
       background: $teal
       margin-top: 20px
       line-height: 40px
-      font: normal 14px $SQ
+      font: 800 14px $OS
+      text-transform: capitalize
       color: #ffffff
       border-radius: 4px
 
@@ -971,7 +980,8 @@ section.browse-wrapper
       div.side-cat-wrapper-inner
         position: absolute
         left: 0
-        z-index: 500
+        z-index: 499
+
 
         svg.blue-icon
         	width: 50px
@@ -1000,7 +1010,7 @@ div.offer-cat-wrapper
 
   div.mobile-cat-tag
     padding-bottom: 10px
-    display: none
+    // display: none
     @include xs
       display: block
     @include sm
@@ -1747,6 +1757,7 @@ div.cat-count
 
   body
     width: 60% !important
+    display: block !important
 
   .menu-mobile, header, .header-shift, button, .detail-map-placeholder, .btn-redeem, footer, .offer-anchor__link, .offer-status
     display: none
