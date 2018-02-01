@@ -51,16 +51,16 @@ body {
   -webkit-font-smoothing: antialiased; }
 
 h1 {
-  font-family: "Sequel";
-  font-weight: normal;
+  font-family: "Open Sans";
+  font-weight: 800;
   font-size: calc( 30px + (45 - 30) * ( (100vw - 320px) / ( 2000 - 320) )); }
 
 h2 {
-  font: normal 24px "Sequel";
+  font: 800 24px "Open Sans";
   color: #4f5b69; }
 
 h3 {
-  font: normal 14px "Sequel";
+  font: 800 14px "Open Sans";
   color: #4f5b69; }
 
 h3.white {
@@ -270,7 +270,7 @@ button:disabled {
   margin-top: 10px;
   border: none;
   border-radius: 4px;
-  font: normal 14px "Sequel";
+  font: 800 14px "Open Sans";
   text-transform: uppercase;
   letter-spacing: .5px;
   cursor: pointer; }
@@ -323,7 +323,7 @@ button:disabled {
   height: 40px;
   padding: 10px 20px;
   border-radius: 20px;
-  font: normal 14px "Sequel";
+  font: 800 14px "Open Sans";
   background: #ffffff;
   border: 1px solid #00999e;
   transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -376,7 +376,7 @@ section.notice {
 form input[type="submit"] {
   background: #00999e;
   color: #ffffff;
-  font: normal 14px "Sequel";
+  font: 800 14px "Open Sans";
   padding: 0 20px;
   height: 50px; }
 
@@ -398,7 +398,7 @@ form.form-regular input[type="text"], form.form-regular input[type="email"], for
 form.form-regular input[type="submit"] {
   background: #00999e;
   color: #ffffff;
-  font: normal 14px "Sequel";
+  font: 800 14px "Open Sans";
   padding: 0 20px; }
   form.form-regular input[type="submit"]:hover {
     background: #0bb2b2; }
@@ -729,7 +729,7 @@ section.guide {
       background: #00999e;
       margin-top: 20px;
       line-height: 40px;
-      font: normal 14px "Sequel";
+      font: 800 14px "Open Sans";
       color: #ffffff;
       border-radius: 4px; }
     section.guide div.guide-box p {
@@ -804,7 +804,7 @@ section.browse-wrapper {
       section.browse-wrapper div.main-side-cat div.side-cat-wrapper div.side-cat-wrapper-inner {
         position: absolute;
         left: 0;
-        z-index: 500; }
+        z-index: 499; }
         section.browse-wrapper div.main-side-cat div.side-cat-wrapper div.side-cat-wrapper-inner svg.blue-icon {
           width: 50px;
           height: 50px;
