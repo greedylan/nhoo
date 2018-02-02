@@ -344,6 +344,14 @@ button:disabled {
     background-image: url("../svg/icon-previous.svg");
     margin-right: 10px; }
 
+@media (max-width: 767px) and (min-width: 0px) {
+  .btn-print {
+    display: none; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .btn-print {
+    display: none; } }
+
 section.notice {
   overflow: hidden;
   padding: 0px 30px;
