@@ -127,6 +127,10 @@ a:hover, a:visited, a:active, a:focus {
   color: #00999e !important;
   font: 700 16px "Brandon Grotesque"; }
 
+.teal__large-opensans {
+  font: 800 20px "Open Sans";
+  color: #00999e; }
+
 a.teal {
   color: #19e8ef !important; }
 
