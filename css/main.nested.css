@@ -322,6 +322,9 @@ button:disabled {
     .btn-redeem {
       display: block; } }
 
+.btn--larger-text {
+  font-size: 20px; }
+
 .offer-anchor__link {
   height: 40px;
   padding: 10px 20px;
