@@ -116,8 +116,7 @@ img {
 a {
   color: #4f5b69;
   text-decoration: none;
-  cursor: pointer;
-  text-transform: capitalize; }
+  cursor: pointer; }
 
 a:hover, a:visited, a:active, a:focus {
   text-decoration: none;
@@ -433,7 +432,6 @@ form.form-animated div.form-input {
     left: 16px;
     font: 700 16px "Brandon Grotesque";
     color: #989eaf;
-    text-transform: capitalize;
     transition: all 150ms cubic-bezier(0.4, 0, 1, 1);
     background: transparent; }
     @media (max-width: 767px) and (min-width: 0px) {
