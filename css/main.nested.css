@@ -127,7 +127,7 @@ a:hover, a:visited, a:active, a:focus {
   font: 700 16px "Brandon Grotesque"; }
 
 .teal__large-opensans {
-  font: 800 20px "Open Sans";
+  font: 800 15px "Open Sans";
   color: #00999e; }
 
 a.teal {
@@ -261,14 +261,15 @@ legend {
 .top-buffer-xs {
   margin-top: 1vh; }
 
-button:focus {
-  outline: 0; }
-
-button:disabled {
-  background: #c8c8c8 !important;
-  color: #efefef !important; }
-  button:disabled:hover {
-    cursor: default !important; }
+button {
+  font-family: "Open Sans"; }
+  button:focus {
+    outline: 0; }
+  button:disabled {
+    background: #c8c8c8 !important;
+    color: #efefef !important; }
+    button:disabled:hover {
+      cursor: default !important; }
 
 .btn-action {
   width: 100%;
@@ -316,6 +317,9 @@ button:disabled {
   background: #c8c8c8;
   color: #efefef !important; }
 
+.btn-blue {
+  background: #4688f1; }
+
 .btn-200 {
   width: 200px; }
 
@@ -357,6 +361,26 @@ button:disabled {
 @media (min-width: 768px) and (max-width: 991px) {
   .btn-print {
     display: none; } }
+
+.btn-google__icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  margin-right: 9px; }
+  .btn-google__icon img {
+    /* width: 18px; */
+    /* height: 18px; */
+    /* line-height: 30px; */
+    }
+
+.btn-google__title {
+  font: 800 14px "Open Sans";
+  color: #fff;
+  line-height: 50px; }
+
+.text--white {
+  color: #ffffff; }
 
 section.notice {
   overflow: hidden;

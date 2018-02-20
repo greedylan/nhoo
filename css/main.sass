@@ -193,7 +193,7 @@ a:hover, a:visited, a:active, a:focus
   color: $teal !important
   font: 700 16px $BG
 .teal__large-opensans
-  font: 800 20px $OS
+  font: 800 15px $OS
   color: $teal
 a.teal
 	color: $brightTeal !important
@@ -333,6 +333,7 @@ button:disabled
 
 
 button
+  font-family: $OS
   &:focus
     outline: 0
   &:disabled
@@ -382,6 +383,8 @@ button
 .btn-grey
   background: #c8c8c8
   color: #efefef !important
+.btn-blue
+  background: #4688f1
 
 .btn-200
   width: 200px
@@ -424,7 +427,27 @@ button
     display: none
 
 
+.btn-google
+  &__icon
+    display: inline-block
+    width: 30px
+    height: 30px
+    background: #ffffff
+    margin-right: 9px
+    img
+      width: 18px
+      height: 18px
+      line-height: 30px
+  &__title
+    font: 800 14px $OS
+    color: #fff
+    line-height: 50px
 
+
+
+
+.text--white
+  color: #ffffff
 
 
 // style for COMMON ELEMENTS //
@@ -1986,3 +2009,12 @@ span.rotateCounterClockwise
   font: 700 16px "Brandon Grotesque"
   color: #9b0047
   padding-top: 5px
+
+
+
+
+
+
+// .googleBtn
+//   background-color: #3079ed
+//   color: white
