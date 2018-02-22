@@ -94,7 +94,7 @@ $standardCurve: cubic-bezier(0.4, 0.0, 0.2, 1)
 $decCurve: cubic-bezier(0.0, 0.0, 0.2, 1)
 $accCurve: cubic-bezier(0.4, 0.0, 1, 1)
 
-// general UI styles
+// general/global UI styles
 *
 	box-sizing: border-box
 	padding: 0
@@ -117,10 +117,12 @@ h1
  text-transform: capitalize
 	font-weight: 800
 	font-size: calc( 30px + (45 - 30) * ( (100vw - 320px) / ( 2000 - 320) ))
+
 h2
 	font: 800 24px $OS
  text-transform: capitalize
 	color: $slateGrey
+
 h3
 	font: 800 14px $OS
  text-transform: capitalize
@@ -132,14 +134,12 @@ h4
   font: 700 18px $BG
   color: $slateGrey
 
-
-
-
 h5
   font: 900 38px $BG
   color: $slateGrey
   text-transform: uppercase
   line-height: 40px
+
 h6
   font: 400 17px $BG
   color: $slateGrey
@@ -147,14 +147,9 @@ h6
   line-height: 18px
   // -webkit-font-smoothing: antialiased
 
-
-
-
-
 p, span
 	font: 400 17px $BG
 	color: #506a75
-
 
 span.bold
 	font: 700 18px $BG
@@ -203,8 +198,6 @@ header
   div.container
     @include xs
       // padding: 0
-
-
 header
   .container
     @include md
@@ -213,7 +206,6 @@ header
       padding: 0
     @include xs
       // margin: 0
-
 
 header
 	width: 100%
@@ -244,8 +236,6 @@ header
 		@include xs
 			width: auto
 			height: 60px
-
-
 header
   @include sm
     height: 60px
@@ -259,8 +249,6 @@ header
     @include sm
       width: auto
       height: 60px
-
-
 
 nav
 	width: auto
@@ -385,18 +373,14 @@ button
   color: #efefef !important
 .btn-blue
   background: #4688f1
-
 .btn-200
   width: 200px
-
 .btn-redeem
   display: none
   @include xs
     display: block
-
 .btn--larger-text
   font-size: 20px
-
 
 .offer-anchor__link
   height: 40px
@@ -425,8 +409,6 @@ button
     display: none
   @include sm
     display: none
-
-
 .btn-google
   &__icon
     display: inline-block
@@ -450,7 +432,7 @@ button
   color: #ffffff
 
 
-// style for COMMON ELEMENTS //
+// style for reusable components //
 section.notice
   overflow: hidden
   padding: 0px 30px
@@ -561,6 +543,7 @@ form.form-animated
 
 
 // style for address section - city, state, zipcode
+
 form.form-animated
   div.one-third
     div.form-input
@@ -725,14 +708,6 @@ div.menu-mobile-content
 section.menu-mobile-show
 	transform: translate(0)
 
-// div.back-button
-// 	width: 100%
-// 	height: 60px
-// 	svg.back-arrow
-// 		width: 60px
-// 		height: 40px
-// 		fill: $brightTeal
-//   margin: 10px 0
 
 div.divider-teal
   width: 100%
@@ -758,19 +733,6 @@ section.menu-mobile
 
     a.nav-favorite:after
       display: none
-    a.nav-favorite:before
-        // display: block
-        // content: ''
-        // width: 40px
-        // height: 40px
-        // background-image: url('../svg/icon-favorite.svg')
-        // background-repeat: no-repeat
-        // position: absolute
-        // top: 50%
-        // left: 20px
-        // transform: translate(0%, -50%)
-
-
 
 
 img.cat-icon
@@ -781,12 +743,43 @@ img.cat-icon
     width: 40px
     height: 40px
 
-
-
 .header-shift
   width: 100%
   height: 80px
 
+
+.geo-location
+
+.geo-location__icon
+  position: relative
+  margin-bottom: 10px
+  &:before
+    display: block
+    content: ''
+    background-image: url('../svg/icon-location.svg')
+    background-repeat: no-repeat
+    width: 16px
+    height: 24px
+    position: absolute
+    top: 0
+    left: 0
+
+.geo-location__mile
+  display: inline-block
+  line-height: 24px
+  padding: 0 10px
+  background: $teal
+  border-radius: 4px
+  color: #ffffff
+  font: 700 17px $BG
+
+// conditional spacing
+.padding-left--small
+  padding-left: 24px
+
+// conditional display
+.display-inline-block
+  display: inline-block
 
 
 
@@ -1458,15 +1451,6 @@ div.geo-city
     position: absolute
     top: 0
     left: 0
-
-div.geo-mile
-  display: inline-block
-  line-height: 24px
-  padding: 0 10px
-  background: $teal
-  border-radius: 4px
-  color: #ffffff
-  font: 700 17px $BG
 
 
 div.favorite-geo
