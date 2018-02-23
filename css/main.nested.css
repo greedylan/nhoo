@@ -89,7 +89,7 @@ p, span {
   font: 400 17px "Brandon Grotesque";
   color: #506a75; }
 
-span.bold {
+.bold {
   font: 700 18px "Brandon Grotesque";
   color: #4f5b69; }
 
@@ -247,19 +247,19 @@ legend {
   display: inline-block; }
 
 .top-buffer {
-  margin-top: 4vh; }
+  margin-top: 40px; }
   @media (max-width: 767px) and (min-width: 0px) {
     .top-buffer {
-      margin-top: 2vh; } }
+      margin-top: 20px; } }
 
 .top-buffer-sm {
-  margin-top: 2vh; }
+  margin-top: 20px; }
   @media (max-width: 767px) and (min-width: 0px) {
     .top-buffer-sm {
-      margin-top: 1vh; } }
+      margin-top: 10px; } }
 
 .top-buffer-xs {
-  margin-top: 1vh; }
+  margin-top: 10px; }
 
 button {
   font-family: "Open Sans"; }
@@ -665,7 +665,7 @@ img.cat-icon {
 
 .header-shift {
   width: 100%;
-  height: 80px; }
+  height: 60px; }
 
 .geo-location__icon {
   position: relative;
@@ -698,12 +698,20 @@ img.cat-icon {
 
 section.headline {
   text-align: center; }
-  section.headline p {
-    width: 60%;
-    max-wdith: 640px; }
+  section.headline .headline__main-title {
+    line-height: 1.2; }
     @media (max-width: 767px) and (min-width: 0px) {
-      section.headline p {
-        width: 80%; } }
+      section.headline .headline__main-title {
+        line-height: 1; } }
+  section.headline .headline__sub-title {
+    width: 60%;
+    max-width: 640px; }
+    @media (max-width: 767px) and (min-width: 0px) {
+      section.headline .headline__sub-title {
+        width: 90%;
+        line-height: 1;
+        margin-bottom: 0;
+        padding-top: 10px; } }
 
 .expand {
   max-height: 1000px !important; }
